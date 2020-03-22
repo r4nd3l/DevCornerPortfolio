@@ -1,7 +1,7 @@
 body {
   font-family: 'roboto-regular';
   padding-top: 54px;
-  color: #868e96;
+  color: var(--gr-);
 }
 
 @media (min-width: 992px) {
@@ -20,7 +20,7 @@ h6 {
   font-family: 'roboto-regular';
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40;
+  color: var(--gr2-);
 }
 
 h1 {
@@ -52,7 +52,7 @@ p.lead {
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: var(--gr2-);
   color: #fff !important;
   border-radius: 100%;
   text-align: center;
@@ -66,7 +66,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #BD5D38;
+  background-color: var(--dc-);
 }
 
 .dev-icons {
@@ -74,7 +74,12 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: var(--dc-);
+  /* cursor: pointer; */
+}
+
+i.fa-li.fa.fa-check{
+  color: var(--dc-);
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -154,17 +159,17 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: var(--dc-) !important;
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  color: var(--dc-) !important;
 }
 
 a {
-  color: #BD5D38;
+  color: var(--dc-);
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: var(--gr-);
 }
