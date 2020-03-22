@@ -25,6 +25,7 @@ h6 {
 
 .fa-award{
   color: var(--dc-) !important;
+  font-size: 1em !important;
 }
 
 h1 {
@@ -43,10 +44,6 @@ h3 {
 .w-100 .mb-5 i{
   font-size: 0.55em;
   vertical-align: middle;
-}
-#certifications .w-100 .mb-5 i{
-  color: var(--dc-);
-  font-size: 1em;
 }
 
 p.lead {
