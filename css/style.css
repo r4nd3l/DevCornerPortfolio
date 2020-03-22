@@ -23,6 +23,10 @@ h6 {
   color: var(--gr2-);
 }
 
+.fa-award{
+  color: var(--dc-) !important;
+}
+
 h1 {
   font-size: 6rem;
   line-height: 5.5rem;
@@ -34,6 +38,15 @@ h2 {
 
 h3 {
   font-size: 2rem;
+}
+
+.w-100 .mb-5 i{
+  font-size: 0.55em;
+  vertical-align: middle;
+}
+#certifications .w-100 .mb-5 i{
+  color: var(--dc-);
+  font-size: 1em;
 }
 
 p.lead {
