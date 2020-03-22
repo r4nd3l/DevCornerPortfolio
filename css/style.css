@@ -47,6 +47,9 @@ p.lead {
   font-family: 'roboto-regular';
   font-size: 1.5rem;
 }
+.subheading > small{
+  color: var(--dc-);
+}
 
 .social-icons a {
   display: inline-block;
