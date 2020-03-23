@@ -468,6 +468,23 @@ hr {
 	align-items: center
 }
 
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
+}
+
 .navbar-toggler {
 	padding: .25rem .75rem;
 	font-size: 1.25rem;
