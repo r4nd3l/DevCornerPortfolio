@@ -247,7 +247,16 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="portfolio">
       <div class="w-100">
         <h2 class="mb-5">Portfolio <i class="fas fa-chalkboard-teacher"></i></h2>
-        <p>Portfolio will goes here!</p>
+        <div class="filter-btn">
+          <ul id="buttons">
+            <li class="active" data-target="all">All</li>
+            <li data-target="bag">Bags</li>
+            <li data-target="watch">Watches</li>
+            <li data-target="shoe">Shoes</li>
+            <li id="JSBtn">JS</li>
+          </ul>
+        </div>
+        <div id="items" class="items"></div>
       </div>
     </section>
 
@@ -262,6 +271,8 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.js"></script>
+  <script src="js/portfolio_engine.js"></script>
+  <script src="js/repoLoader.js"></script>
 
 </body>
 

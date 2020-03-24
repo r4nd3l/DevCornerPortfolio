@@ -186,3 +186,53 @@ a {
 a:hover, a:focus, a:active {
   color: var(--gr-);
 }
+
+/* portfolio section */
+
+.w-100 .filter-btn{
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+
+.w-100 .filter-btn ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.w-100 .filter-btn ul{
+  padding: 30px 0px 20px;
+}
+
+.w-100 .filter-btn ul li{
+  display: inline-block;
+  background-color: #28a745;
+  padding: 5px 15px;
+  color: var(--wh-);
+  margin: 0px 1px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.w-100 .filter-btn ul li.active{
+  background-color: var(--wh-);
+  color: var(--dc-);
+  border: 1px solid var(--dc-);
+}
+
+.w-100 .items{
+  float: left;
+  width: 100%;
+}
+
+.w-100 .items .box{
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  transition: all 1s ease;
+}
+.w-100 .items .box .inner img{
+  width: 100%;
+  display: block;
+}
+/* portfolio section - END */
