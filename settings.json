@@ -1,0 +1,27 @@
+{
+    "gitFetch": {
+        "gitID": "",
+        "fetchPerPage": 20,
+        //"expectedPagesOfRepos": 9,
+        "clientId": "",
+        "clientsecret": ""
+    },
+    "profileSettings": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "workExperiences": [
+            {
+                "place": "Google",
+                "from": "2018-02-10",
+                "to": "2020-01-31",
+                "position": "Full-stack developer"
+            },
+            {
+                "place": "Facebook",
+                "from": "2017-02-10",
+                "to": "2018-02-09",
+                "position": "Teachlead"
+            }
+        ]
+    }
+}
