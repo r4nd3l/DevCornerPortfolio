@@ -2,7 +2,6 @@
     "gitFetch": {
         "gitID": "",
         "fetchPerPage": 20,
-        //"expectedPagesOfRepos": 9,
         "clientId": "",
         "clientsecret": ""
     },
