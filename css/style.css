@@ -212,12 +212,12 @@ a:hover, a:focus, a:active {
   margin: 0px 1px;
   cursor: pointer;
   font-size: 16px;
+  border: 1px solid var(--dc-);
 }
 
 .w-100 .filter-btn ul li.active{
   background-color: var(--wh-);
   color: var(--dc-);
-  border: 1px solid var(--dc-);
 }
 
 .w-100 .items{
