@@ -7,15 +7,56 @@ let categoryCMS = []
 let categoryPhp = []
 let categoryTool = []
 
-let gitId = "r4nd3l"
-let reposPerCall = 20
-let client_id = "0b1b1bd2e0fd2b13f108"
-let client_secret = "a2e9cae12566e882854602f8644209267033fcc9"
+let gitId
+let reposPerCall
+let client_id
+let client_secret
 
-function getSettings() {
-    fetch() // local json
-        .then() // load settings vars + call getGithubRepositories
+function gitCallSettings() {
+    return new Promise((resolve, reject) => {
+        fetch('https://r4nd3l.github.io/DevCornerPortfolio/settings.json')
+            .then(response => {
+                return response.json().then(data => {
+
+                    gitId = data.gitFetch.gitId
+                    reposPerCall = data.gitFetch.fetchPerPage
+                    client_id = data.gitFetch.clientId
+                    client_secret = data.gitFetch.clientsecret
+
+                    getGithubRepositories(progressCallback)
+                        .then(repos => {
+                            categoryAll = repos
+                            repos.forEach(repo => {
+                                if (repo.description.includes("[Js]")) {
+                                    categoryJS.push(repo)
+                                }
+                                if (repo.description.includes("[Css]")) {
+                                    categoryCss.push(repo)
+                                }
+                                if (repo.description.includes("[CMS]")) {
+                                    categoryCMS.push(repo)
+                                }
+                                if (repo.description.includes("[Theme]")) {
+                                    categoryThemes.push(repo)
+                                }
+                                if (repo.description.includes("[Game]")) {
+                                    categoryGames.push(repo)
+                                }
+                                if (repo.description.includes("[Php]")) {
+                                    categoryPhp.push(repo)
+                                }
+                                if (repo.description.includes("[Tool]")) {
+                                    categoryTool.push(repo)
+                                }
+                            })
+                        })
+
+                }).catch(reject)
+            }).catch(reject)
+    })
 }
+
+gitCallSettings()
 
 function getGithubRepositories(progress, url = `https://api.github.com/users/${gitId}/repos?page=1&per_page=${reposPerCall}&client_id=${client_id}&client_secret=${client_secret}`, repos = [], pageCount = 1) {
     return new Promise((resolve, reject) => fetch(url)
@@ -48,35 +89,6 @@ function progressCallback(repos) {
                 </div>`
     })
 }
-
-getGithubRepositories(progressCallback)
-    .then(repos => {
-        categoryAll = repos
-        repos.forEach(repo => {
-            if (repo.description.includes("[Js]")) {
-                categoryJS.push(repo)
-            }
-            if (repo.description.includes("[Css]")) {
-                categoryCss.push(repo)
-            }
-            if (repo.description.includes("[CMS]")) {
-                categoryCMS.push(repo)
-            }
-            if (repo.description.includes("[Theme]")) {
-                categoryThemes.push(repo)
-            }
-            if (repo.description.includes("[Game]")) {
-                categoryGames.push(repo)
-            }
-            if (repo.description.includes("[Php]")) {
-                categoryPhp.push(repo)
-            }
-            if (repo.description.includes("[Tool]")) {
-                categoryTool.push(repo)
-            }
-        })
-    })
-
 
 document.getElementById("JSBtn").addEventListener("click", function () {
     document.getElementById("items").innerHTML = '';
