@@ -79,27 +79,20 @@ function getGithubRepositories(progress, url = `https://api.github.com/users/${g
         }).catch(reject));
 }
 
-function progressCallback(repos) {
-    repos.forEach(item => {
-        document.getElementById("items").innerHTML +=
-        `<div class="box" data-id="all">
-            <div class="inner">
-                <a href="https://github.com/r4nd3l/${item.name}/" target="_blank">${item.name}</a>
-            </div>
-        </div>`
-    })
-}
+function progressCallback(repos){buildRepoList(repos)}
 
 function buildRepoList(categoryArray) {
     document.getElementById("items").innerHTML = '';
 
     categoryArray.forEach(item => {
         document.getElementById("items").innerHTML +=
-            `<div class="box" data-id="all">
-                <div class="inner">
-                    <a href="https://github.com/r4nd3l/${item.name}/" target="_blank">${item.name}</a>
-                </div>
-            </div>`
+            `<a href="https://github.com/r4nd3l/${item.name}/" target="_blank">
+              <div class="box" data-id="all">
+                  <div class="inner">
+                    ${item.name}
+                  </div>
+              </div>
+            </a>`
     })
 }
 
@@ -112,124 +105,3 @@ document.querySelector("[data-target='Theme']").addEventListener("click", () => 
 document.querySelector("[data-target='Game']").addEventListener("click", () => {buildRepoList(categoryGames)});
 document.querySelector("[data-target='Php']").addEventListener("click", () => {buildRepoList(categoryPhp)});
 document.querySelector("[data-target='Tool']").addEventListener("click", () => {buildRepoList(categoryTool)});
-
-//
-// // All category
-// document.querySelector("[data-target='all']").addEventListener("click", function () {
-//     document.getElementById("items").innerHTML = '';
-//
-//     categoryAll.forEach(item => {
-//         document.getElementById("items").innerHTML +=
-//             `<div class="box" data-id="all">
-//                 <div class="inner">
-//                     ${item.name}
-//                 </div>
-//             </div>`
-//     })
-//
-// });
-//
-// // JS
-// document.querySelector("[data-target='Js']").addEventListener("click", function () {
-//     document.getElementById("items").innerHTML = '';
-//
-//     categoryJS.forEach(item => {
-//         document.getElementById("items").innerHTML +=
-//             `<div class="box" data-id="Js">
-//                 <div class="inner">
-//                     ${item.name}
-//                 </div>
-//             </div>`
-//     })
-//
-// });
-//
-// // CSS
-// document.querySelector("[data-target='Css']").addEventListener("click", function () {
-//     document.getElementById("items").innerHTML = '';
-//
-//     categoryCss.forEach(item => {
-//         document.getElementById("items").innerHTML +=
-//             `<div class="box" data-id="Css">
-//                 <div class="inner">
-//                     ${item.name}
-//                 </div>
-//             </div>`
-//     })
-//
-// });
-//
-// // CMS
-// document.querySelector("[data-target='CMS']").addEventListener("click", function () {
-//     document.getElementById("items").innerHTML = '';
-//
-//     categoryCMS.forEach(item => {
-//         document.getElementById("items").innerHTML +=
-//             `<div class="box" data-id="CMS">
-//                 <div class="inner">
-//                     ${item.name}
-//                 </div>
-//             </div>`
-//     })
-//
-// });
-//
-// // Theme
-// document.querySelector("[data-target='Theme']").addEventListener("click", function () {
-//     document.getElementById("items").innerHTML = '';
-//
-//     categoryThemes.forEach(item => {
-//         document.getElementById("items").innerHTML +=
-//             `<div class="box" data-id="Theme">
-//                 <div class="inner">
-//                     ${item.name}
-//                 </div>
-//             </div>`
-//     })
-//
-// });
-//
-// // Game
-// document.querySelector("[data-target='Game']").addEventListener("click", function () {
-//     document.getElementById("items").innerHTML = '';
-//
-//     categoryGames.forEach(item => {
-//         document.getElementById("items").innerHTML +=
-//             `<div class="box" data-id="Game">
-//                 <div class="inner">
-//                     ${item.name}
-//                 </div>
-//             </div>`
-//     })
-//
-// });
-//
-// // Php
-// document.querySelector("[data-target='Php']").addEventListener("click", function () {
-//     document.getElementById("items").innerHTML = '';
-//
-//     categoryPhp.forEach(item => {
-//         document.getElementById("items").innerHTML +=
-//             `<div class="box" data-id="Php">
-//                 <div class="inner">
-//                     ${item.name}
-//                 </div>
-//             </div>`
-//     })
-//
-// });
-//
-// // Tool
-// document.querySelector("[data-target='Tool']").addEventListener("click", function () {
-//     document.getElementById("items").innerHTML = '';
-//
-//     categoryTool.forEach(item => {
-//         document.getElementById("items").innerHTML +=
-//             `<div class="box" data-id="Tool">
-//                 <div class="inner">
-//                     ${item.name}
-//                 </div>
-//             </div>`
-//     })
-//
-// });

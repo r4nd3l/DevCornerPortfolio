@@ -235,18 +235,22 @@ a:hover, a:focus, a:active {
   padding: 0.25em 0.5em;
   margin-bottom: 0.8em;
   font-size: 1.1em;
-  transition: all 1s ease;
   border-left: 3px solid var(--dc-);
   border-top: 1px solid var(--sg-);
   border-bottom: 1px solid var(--sg-);
   border-right: 1px solid var(--sg-);
   border-radius: 3px;
+  width: calc(100vw - 30vw);
 }
-.w-100 .items .box .inner a{
-  text-decoration: none;
+.w-100 .items .box:hover{
+  border-left: 3px solid var(--dc-);
+  border-top: 1px solid var(--dc-);
+  border-bottom: 1px solid var(--dc-);
+  border-right: 1px solid var(--dc-);
 }
-.w-100 .items .box .inner a:hover{
+.w-100 .items a:hover{
   color: var(--gr2-);
+  text-decoration: none;
 }
 /* portfolio section - END */
 
@@ -260,7 +264,6 @@ a:hover, a:focus, a:active {
   width: 50px;
   height: 50px;
   background: var(--dc-);
-  /* border-radius: 5px; */
   color: white;
   border: none;
   cursor: pointer;
