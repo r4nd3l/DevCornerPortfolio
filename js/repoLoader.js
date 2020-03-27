@@ -90,6 +90,21 @@ function progressCallback(repos) {
     })
 }
 
+// All category
+document.querySelector("[data-target='all']").addEventListener("click", function () {
+    document.getElementById("items").innerHTML = '';
+
+    categoryAll.forEach(item => {
+        document.getElementById("items").innerHTML +=
+            `<div class="box" data-id="all">
+                <div class="inner">
+                    ${item.name}
+                </div>
+            </div>`
+    })
+
+});
+
 // JS
 document.querySelector("[data-target='Js']").addEventListener("click", function () {
     document.getElementById("items").innerHTML = '';
@@ -109,7 +124,7 @@ document.querySelector("[data-target='Js']").addEventListener("click", function 
 document.querySelector("[data-target='Css']").addEventListener("click", function () {
     document.getElementById("items").innerHTML = '';
 
-    categoryJS.forEach(item => {
+    categoryCss.forEach(item => {
         document.getElementById("items").innerHTML +=
             `<div class="box" data-id="Css">
                 <div class="inner">
@@ -124,7 +139,7 @@ document.querySelector("[data-target='Css']").addEventListener("click", function
 document.querySelector("[data-target='CMS']").addEventListener("click", function () {
     document.getElementById("items").innerHTML = '';
 
-    categoryJS.forEach(item => {
+    categoryCMS.forEach(item => {
         document.getElementById("items").innerHTML +=
             `<div class="box" data-id="CMS">
                 <div class="inner">
@@ -139,7 +154,7 @@ document.querySelector("[data-target='CMS']").addEventListener("click", function
 document.querySelector("[data-target='Theme']").addEventListener("click", function () {
     document.getElementById("items").innerHTML = '';
 
-    categoryJS.forEach(item => {
+    categoryThemes.forEach(item => {
         document.getElementById("items").innerHTML +=
             `<div class="box" data-id="Theme">
                 <div class="inner">
@@ -154,7 +169,7 @@ document.querySelector("[data-target='Theme']").addEventListener("click", functi
 document.querySelector("[data-target='Game']").addEventListener("click", function () {
     document.getElementById("items").innerHTML = '';
 
-    categoryJS.forEach(item => {
+    categoryGames.forEach(item => {
         document.getElementById("items").innerHTML +=
             `<div class="box" data-id="Game">
                 <div class="inner">
@@ -169,7 +184,7 @@ document.querySelector("[data-target='Game']").addEventListener("click", functio
 document.querySelector("[data-target='Php']").addEventListener("click", function () {
     document.getElementById("items").innerHTML = '';
 
-    categoryJS.forEach(item => {
+    categoryPhp.forEach(item => {
         document.getElementById("items").innerHTML +=
             `<div class="box" data-id="Php">
                 <div class="inner">
@@ -184,7 +199,7 @@ document.querySelector("[data-target='Php']").addEventListener("click", function
 document.querySelector("[data-target='Tool']").addEventListener("click", function () {
     document.getElementById("items").innerHTML = '';
 
-    categoryJS.forEach(item => {
+    categoryTool.forEach(item => {
         document.getElementById("items").innerHTML +=
             `<div class="box" data-id="Tool">
                 <div class="inner">
