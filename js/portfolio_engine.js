@@ -12,22 +12,19 @@ for(let i=0; i<buttons.length; i++){
     const target=this.getAttribute("data-target");
 
     for(let k=0; k<items.length; k++){
-      items[k].style.opacity="0.5";
-      items[k].style.transform="scale(0.8)";
-
-      // items[k].style.display="none";
+      // items[k].style.opacity="0.5";
+      // items[k].style.transform="scale(0.8)";
+      items[k].style.display="none";
 
       if(items[k].getAttribute("data-id")==target){
-        items[k].style.opacity="1";
-        items[k].style.transform="scale(1)";
-
-        // items[k].style.display="block";
+        // items[k].style.opacity="1";
+        // items[k].style.transform="scale(1)";
+        items[k].style.display="block";
       }
       if(target=="all"){
-        items[k].style.opacity="1";
-        items[k].style.transform="scale(1)";
-
-        // items[k].style.display="block";
+        // items[k].style.opacity="1";
+        // items[k].style.transform="scale(1)";
+        items[k].style.display="block";
       }
     }
   })
