@@ -188,6 +188,10 @@ a:hover, a:focus, a:active {
 }
 
 /* portfolio section */
+.w-100 p > span{
+  color: red;
+  font-family: OpenSans-Semibold;
+}
 
 .w-100 .filter-btn{
   float: left;

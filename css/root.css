@@ -18,6 +18,10 @@
     src: url('../fonts/Lobster_1.4.otf'); /*URL to font*/
 }
 @font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url('../fonts/OpenSans-Semibold.ttf'); /*URL to font*/
+}
+@font-face {
   font-family: 'roboto-regular';
   src:url("../fonts/Roboto/roboto-regular.ttf");
   font-weight: normal;
