@@ -84,7 +84,7 @@ function progressCallback(repos) {
         document.getElementById("items").innerHTML +=
         `<div class="box" data-id="all">
             <div class="inner">
-                ${item.name}
+                <a href="https://github.com/r4nd3l/${item.name}/" target="_blank">${item.name}</a>
             </div>
         </div>`
     })
@@ -97,7 +97,7 @@ function buildRepoList(categoryArray) {
         document.getElementById("items").innerHTML +=
             `<div class="box" data-id="all">
                 <div class="inner">
-                    ${item.name}
+                    <a href="https://github.com/r4nd3l/${item.name}/" target="_blank">${item.name}</a>
                 </div>
             </div>`
     })
