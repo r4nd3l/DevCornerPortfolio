@@ -103,14 +103,15 @@ function buildRepoList(categoryArray) {
     })
 }
 
-document.querySelector("[data-target='all']").addEventListener("click", buildRepoList(categoryAll));
-document.querySelector("[data-target='Js']").addEventListener("click", buildRepoList(categoryJS));
-document.querySelector("[data-target='Css']").addEventListener("click", buildRepoList(categoryCss));
-document.querySelector("[data-target='CMS']").addEventListener("click", buildRepoList(categoryCMS));
-document.querySelector("[data-target='Theme']").addEventListener("click", buildRepoList(categoryThemes));
-document.querySelector("[data-target='Game']").addEventListener("click", buildRepoList(categoryGames));
-document.querySelector("[data-target='Php']").addEventListener("click", buildRepoList(categoryPhp));
-document.querySelector("[data-target='Tool']").addEventListener("click", buildRepoList(categoryTool));
+
+document.querySelector("[data-target='all']").addEventListener("click", () => {buildRepoList(categoryAll)});
+document.querySelector("[data-target='Js']").addEventListener("click", () => {buildRepoList(categoryJS)});
+document.querySelector("[data-target='Css']").addEventListener("click", () => {buildRepoList(categoryCss)});
+document.querySelector("[data-target='CMS']").addEventListener("click", () => {buildRepoList(categoryCMS)});
+document.querySelector("[data-target='Theme']").addEventListener("click", () => {buildRepoList(categoryThemes)});
+document.querySelector("[data-target='Game']").addEventListener("click", () => {buildRepoList(categoryGames)});
+document.querySelector("[data-target='Php']").addEventListener("click", () => {buildRepoList(categoryPhp)});
+document.querySelector("[data-target='Tool']").addEventListener("click", () => {buildRepoList(categoryTool)});
 
 //
 // // All category
