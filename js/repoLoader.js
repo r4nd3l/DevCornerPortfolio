@@ -86,13 +86,17 @@ function buildRepoList(categoryArray) {
 
     categoryArray.forEach(item => {
         document.getElementById("items").innerHTML +=
-            `<a href="https://github.com/r4nd3l/${item.name}/" target="_blank">
-              <div class="box" data-id="all">
+            `<div class="box" data-id="all">
                   <div class="inner">
                     ${item.name}
+                    <small>${item.description}</small>
                   </div>
-              </div>
-            </a>`
+                  <div class="ext-set">
+                    <a href="https://github.com/r4nd3l/${item.name}/" target="_blank">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </div>
+              </div>`
     })
 }
 

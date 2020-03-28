@@ -194,21 +194,17 @@ a:hover, a:focus, a:active {
 }
 
 .w-100 .filter-btn{
-  float: left;
-  width: 100%;
-  text-align: left;
+  display: flex;
 }
 
-.w-100 .filter-btn ul{
+.w-100 .filter-btn #buttons{
   list-style: none;
   margin: 0;
   padding: 0;
-}
-.w-100 .filter-btn ul{
   padding: 30px 0px 20px;
 }
 
-.w-100 .filter-btn ul li{
+.w-100 .filter-btn #buttons li{
   display: inline-block;
   background-color: #28a745;
   padding: 5px 15px;
@@ -218,8 +214,31 @@ a:hover, a:focus, a:active {
   font-size: 16px;
   border: 1px solid var(--dc-);
 }
+.w-100 .filter-btn #buttons li.active{
+  background-color: var(--wh-);
+  color: var(--dc-);
+}
+.w-100 .filter-btn div{
+  margin: 0 0 0 auto;
+}
+.w-100 .filter-btn .view-btn{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 30px 0px 20px;
+}
 
-.w-100 .filter-btn ul li.active{
+.w-100 .filter-btn .view-btn li{
+  display: inline-block;
+  background-color: #28a745;
+  padding: 5px 15px;
+  color: var(--wh-);
+  margin: 0px 1px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid var(--dc-);
+}
+.w-100 .filter-btn .view-btn li.active{
   background-color: var(--wh-);
   color: var(--dc-);
 }
@@ -235,23 +254,37 @@ a:hover, a:focus, a:active {
   padding: 0.25em 0.5em;
   margin-bottom: 0.8em;
   font-size: 1.1em;
-  border-left: 3px solid var(--dc-);
-  border-top: 1px solid var(--sg-);
-  border-bottom: 1px solid var(--sg-);
-  border-right: 1px solid var(--sg-);
+  border: 1px solid var(--sg-);
   border-radius: 3px;
-  width: calc(100vw - 30vw);
 }
 .w-100 .items .box:hover{
-  border-left: 3px solid var(--dc-);
-  border-top: 1px solid var(--dc-);
-  border-bottom: 1px solid var(--dc-);
-  border-right: 1px solid var(--dc-);
+  border: 1px solid var(--dc-);
 }
-.w-100 .items a:hover{
+.w-100 .items a{
   color: var(--gr2-);
   text-decoration: none;
 }
+.w-100 .items a:hover{
+  color: var(--dc-);
+  text-decoration: none;
+}
+.w-100 .items .box .inner{
+  float: left;
+  color: var(--dc-);
+  display: inline-grid;
+}
+.w-100 .items .box .inner small{
+  color: var(--gr2-);
+}
+.w-100 .items .box .ext-set{
+  float: right;
+  display: none;
+}
+.w-100 .items .box:hover .ext-set{
+  float: right;
+  display: block;
+}
+
 /* portfolio section - END */
 
 
