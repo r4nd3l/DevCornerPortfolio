@@ -45,7 +45,25 @@ $(document).ready(function(){
 });
 
 
+// fetch all the personal content
+"use strict";
 
+var myInit = {method: 'GET',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              mode: 'cors',
+              cache: 'default' };
+
+let myRequest = new Request('https://r4nd3l.github.io/DevCornerPortfolio/profile_content.json', myInit);
+
+fetch(myRequest)
+  .then(function(resp){
+    return resp.json();
+  });
+  .then(function(data){
+    console.log(data.profileContent);
+  });
 
 
 
