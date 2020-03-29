@@ -100,6 +100,25 @@ function buildRepoList(categoryArray) {
     })
 }
 
+function buildRepoList_2(categoryArray) {
+    document.getElementById("items").innerHTML = '';
+
+    categoryArray.forEach(item => {
+        document.getElementById("items").innerHTML +=
+            `<div class="box" data-id="all">
+                  <div class="inner">
+                    ${item.name}
+                    <small>${item.description}</small>
+                  </div>
+                  <div class="ext-set">
+                    <a href="https://github.com/r4nd3l/${item.name}/" target="_blank">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </div>
+              </div>`
+    })
+}
+
 
 document.querySelector("[data-target='all']").addEventListener("click", () => {buildRepoList(categoryAll)});
 document.querySelector("[data-target='Js']").addEventListener("click", () => {buildRepoList(categoryJS)});
@@ -109,3 +128,39 @@ document.querySelector("[data-target='Theme']").addEventListener("click", () => 
 document.querySelector("[data-target='Game']").addEventListener("click", () => {buildRepoList(categoryGames)});
 document.querySelector("[data-target='Php']").addEventListener("click", () => {buildRepoList(categoryPhp)});
 document.querySelector("[data-target='Tool']").addEventListener("click", () => {buildRepoList(categoryTool)});
+
+
+
+// Change grid view to list view at portfolio section
+document.getElementById("grid_btn").addEventListener("click", viewFlex);
+function viewFlex() {
+  buildRepoList_2(categoryAll);
+  document.getElementById('items').style.cssText = `
+    display: flex;
+  `
+  document.getElementById('list_btn').classList.remove("active");
+  document.getElementById('grid_btn').classList.add("active");
+  document.getElementById('items').style.animation = "fadeIn 1s";
+}
+
+document.getElementById("list_btn").addEventListener("click", viewList);
+function viewList() {
+  buildRepoList(categoryAll);
+  document.getElementById('items').style.cssText = `
+    display: grid;
+  `
+  document.getElementById('grid_btn').classList.remove("active");
+  document.getElementById('list_btn').classList.add("active");
+  document.getElementById('items').style.animation = "fadeIn 1s";
+}
+
+// add and remove grid/list view
+document.getElementById("grid_btn").onmouseover = function() {mouseOver()};
+document.getElementById("list_btn").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  document.getElementById("items").style.animation = "none";
+}
+function mouseOut() {
+  document.getElementById("items").style.animation = "none";
+}
