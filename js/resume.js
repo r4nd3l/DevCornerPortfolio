@@ -53,6 +53,7 @@ function viewFlex() {
   `
   document.getElementById('list_btn').classList.remove("active");
   document.getElementById('grid_btn').classList.add("active");
+  document.getElementById('items').style.animation = "fadeIn 1s";
 }
 
 document.getElementById("list_btn").addEventListener("click", viewList);
@@ -62,11 +63,19 @@ function viewList() {
   `
   document.getElementById('grid_btn').classList.remove("active");
   document.getElementById('list_btn').classList.add("active");
+  document.getElementById('items').style.animation = "fadeIn 1s";
 }
 
+// add and remove grid/list view
+document.getElementById("grid_btn").onmouseover = function() {mouseOver()};
+document.getElementById("list_btn").onmouseout = function() {mouseOut()};
 
-
-
+function mouseOver() {
+  document.getElementById("items").style.animation = "none";
+}
+function mouseOut() {
+  document.getElementById("items").style.animation = "none";
+}
 
 
 
