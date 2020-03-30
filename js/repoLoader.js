@@ -13,7 +13,7 @@ let client_id
 let client_secret
 
 
-let viewType = "grid"
+let viewType = "list"
 let currentCateg = []
 
 function gitCallSettings() {
@@ -125,18 +125,6 @@ function buildRepoList(categoryArray) {
   currentCateg = categoryArray
   document.getElementById("items").innerHTML = newContent;
 }
-
-/*
-function buildRepoList_2(categoryArray) {
-  newContent = "";
-
-  categoryArray.forEach(item => {
-    newContent +=
-      `${item.name}`
-  })
-  document.getElementById("items").innerHTML = newContent;
-}
-*/
 
 
 document.querySelector("[data-target='all']").addEventListener("click", () => { buildRepoList(categoryAll) });

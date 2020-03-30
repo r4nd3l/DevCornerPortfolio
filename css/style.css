@@ -2,6 +2,7 @@ body {
   font-family: 'roboto-regular';
   padding-top: 54px;
   color: var(--gr-);
+  background: white;
 }
 
 @media (min-width: 992px) {

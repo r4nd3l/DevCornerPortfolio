@@ -6,8 +6,17 @@
         "clientsecret": "a2e9cae12566e882854602f8644209267033fcc9"
     },
     "profileSettings": {
-        "firstName": "John",
-        "lastName": "Doe",
+        "firstName": "Mate",
+        "lastName": "Molnar",
+        "address": "104 High Street",
+        "city_and_zip": "Measham, DE12 7JB",
+        "phone": "+44 7393-128-587",
+        "email": "matemolnar88@gmail.hu",
+        "bio": "A Front-end developer who loves UI effects, animation and dynamic user experience. <br> I design and develop experience that make people's lives simple.",
+        "url_linkedIn": "https://www.linkedin.com/in/matemolnar88/",
+        "url_github": "https://github.com/r4nd3l",
+        "url_facebook": "https://www.facebook.com/mate.envienta.7",
+        "url_email": "mailto:matemolnar88@gmail.com",
         "workExperiences": [
             {
                 "place": "Google",
