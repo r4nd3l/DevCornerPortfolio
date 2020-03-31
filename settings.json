@@ -1,35 +1,109 @@
 {
-    "gitFetch": {
-        "gitId": "r4nd3l",
-        "fetchPerPage": 20,
-        "clientId": "0b1b1bd2e0fd2b13f108",
-        "clientsecret": "a2e9cae12566e882854602f8644209267033fcc9"
+  "gitFetch": {
+    "gitId": "r4nd3l",
+    "fetchPerPage": 20,
+    "clientId": "0b1b1bd2e0fd2b13f108",
+    "clientsecret": "a2e9cae12566e882854602f8644209267033fcc9"
+  },
+  "profileSettings": {
+    "firstName": "Mate",
+    "lastName": "Molnar",
+    "address": "104 High Street",
+    "city_and_zip": "Measham, DE12 7JB",
+    "phone": "+44 7393-128-587",
+    "email": "matemolnar88@gmail.hu",
+    "bio": "A Front-end developer who loves UI effects, animation and dynamic user experience. <br> I design and develop experience that make people's lives simple.",
+    "url_linkedIn": "https://www.linkedin.com/in/matemolnar88/",
+    "url_github": "https://github.com/r4nd3l",
+    "url_facebook": "https://www.facebook.com/mate.envienta.7",
+    "url_email": "mailto:matemolnar88@gmail.com",
+    "workExperiences": [
+      {
+        "position": "Web desginer & developer",
+        "place": "Gran Canaria - Las Palomas",
+        "from": "August 2015",
+        "to": "November 2019",
+        "description": "Web design and development (UI & UI) to create website layout by using various HTML, CSS, JavaScript practice via Git repository system."
+      },
+      {
+        "position": "IT-System Administrator",
+        "place": "Szeged - Hungary",
+        "from": "June 2013",
+        "to": "June 2014",
+        "description": "Ensure security through access controls, backups and firewalls also install and configure software and hardware."
+      }
+    ],
+    "schoolEducation": [
+      {
+        "school": "Erhvervsakademi sjælland - Campus Roskilde",
+        "course": "BS.c. in web development",
+        "from": "September 2016",
+        "to": "January 2018",
+        "description": "Write well designed, testable, efficient code by using software development practices."
+      },
+      {
+        "school": "Zibat - Campus Køge",
+        "course": "AP Degree in Multimedia Design & Communication",
+        "from": "August 2014",
+        "to": "May 2016",
+        "description": "Create wireframes, storyboards, user flows, process flows and site maps to communicate and design ideas."
+      },
+      {
+        "school": "Gabor Denes Institution - Szeged",
+        "course": "Cert.H.E. in IT.System Administrator",
+        "from": "September 2012",
+        "to": "May 2014",
+        "description": "Monitor performance and maintain systems according to requirements, manage network servers and technology tools."
+      }
+    ],
+    "Skills": {
+      "Programming languages & Tools": [
+        {
+          "html5": "<i title='html5' class='fab fa-html5'></i>",
+          "css3": "<i title='css3' class='fab fa-css3-alt'></i>",
+          "js": "<i title='js' class='fab fa-js-square'></i>",
+          "angular": "<i title='angular' class='fab fa-angular'></i>",
+          "vuejs": "<i title='vuejs' class='fab fa-vuejs'></i>",
+          "nodjs": "<i title='node-js' class='fab fa-node-js'></i>",
+          "wordpress": "<i title='wordpress' class='fab fa-wordpress'></i>",
+          "npm": "<i title='npm' class='fab fa-npm'></i>",
+          "php": "<i title='php' class='fab fa-php'></i></li>"
+        }
+      ],
+      "Workflow": [
+        {
+          "agile": "Agile Development & Scrum, Kanban",
+          "Responsive": "Mobile-First, Responsive Design",
+          "uxi": "Web design (UX-UI)",
+          "adobe": "Graphic design (Adobe Ps, Ai, Xd)",
+          "browser": "Cross Browser Testing & Debugging",
+          "git": "Git repository systems",
+          "npm": "OS environments (Linux, Mac, Windows)"
+        }
+      ]
     },
-    "profileSettings": {
-        "firstName": "Mate",
-        "lastName": "Molnar",
-        "address": "104 High Street",
-        "city_and_zip": "Measham, DE12 7JB",
-        "phone": "+44 7393-128-587",
-        "email": "matemolnar88@gmail.hu",
-        "bio": "A Front-end developer who loves UI effects, animation and dynamic user experience. <br> I design and develop experience that make people's lives simple.",
-        "url_linkedIn": "https://www.linkedin.com/in/matemolnar88/",
-        "url_github": "https://github.com/r4nd3l",
-        "url_facebook": "https://www.facebook.com/mate.envienta.7",
-        "url_email": "mailto:matemolnar88@gmail.com",
-        "workExperiences": [
-            {
-                "place": "Google",
-                "from": "2018-02-10",
-                "to": "2020-01-31",
-                "position": "Full-stack developer"
-            },
-            {
-                "place": "Facebook",
-                "from": "2017-02-10",
-                "to": "2018-02-09",
-                "position": "Teachlead"
-            }
-        ]
+    "Interests": {
+      "1_paragraph": "Sint per eiusmod vitae iaculis sollicitudin ultrices architecto! Temporibus nobis aliquam velit, quos! Dis excepturi ultrices hendrerit porro laboriosam at accusamus minim? Amet nemo excepturi, ea dolor condimentum, aliquam laborum reiciendis molestie? Ex corrupti, laboriosam facilisi. Turpis. Adipisicing tincidunt euismod senectus felis soluta pulvinar praesent soluta reprehenderit, platea iste diam.",
+      "2_paragraph": "Facilisi metus quam porta facere eget aenean? Natus praesentium alias pariatur suscipit, consectetur ridiculus maiores sollicitudin pellentesque repellat, do urna expedita, quam, sociosqu ornare aspernatur lacus ad ultricies consequuntur nihil, totam mi neque nisl. Rem ex, alias magna expedita, vero! Earum iusto incididunt officiis nam facilisis dolores penatibus iure incidunt.",
+    },
+    "Certifications": {
+      "CISCO Certified Network Associate": [
+        {
+          "CCNA_1": "CCNA Discovery Designing & Supporting Computer Networks",
+          "CCNA_2": "CCNA Discovery Introduciong Routing & Switching in the Enterprise",
+          "CCNA_3": "CCNA Discovery Network for Home & Small Business",
+          "CCNA_4": "CCNA Discovery Working at a Small to Medium Business or ISP"
+        }
+      ],
+      "Information Technology of PC Hardware and Software": [
+        {
+          "IT_1": "IT Essentials",
+          "IT_2": "IT Essentials - PC Hardware & Software"
+        }
+      ]
+    },
+    "Portfolio": {
+      "GitHub_url": "https://github.com/r4nd3l/"
     }
+  }
 }
