@@ -12,7 +12,7 @@ let reposPerCall
 let client_id
 let client_secret
 
-
+let personalSettings
 let viewType = "list"
 let currentCateg = []
 
@@ -26,6 +26,9 @@ function gitCallSettings() {
           reposPerCall = data.gitFetch.fetchPerPage
           client_id = data.gitFetch.clientId
           client_secret = data.gitFetch.clientsecret
+
+          personalSettings = data.profileSettings
+          // console.log(personalSettings)
 
           getGithubRepositories(progressCallback)
             .then(repos => {
@@ -58,6 +61,10 @@ function gitCallSettings() {
         }).catch(reject)
       }).catch(reject)
   })
+}
+
+function personalContent(){
+  console.log(personalSettings)
 }
 
 gitCallSettings()
