@@ -64,8 +64,8 @@
         "description": "Monitor performance and maintain systems according to requirements, manage network servers and technology tools."
       }
     ],
-    "Skills": {
-      "Programming languages & Tools": [
+    "skills": {
+      "pLang": [
         {
           "html5": "<i title='html5' class='fab fa-html5'></i>",
           "css3": "<i title='css3' class='fab fa-css3-alt'></i>",
@@ -78,7 +78,7 @@
           "php": "<i title='php' class='fab fa-php'></i></li>"
         }
       ],
-      "Workflow": [
+      "wflow": [
         {
           "agile": "Agile Development & Scrum, Kanban",
           "Responsive": "Mobile-First, Responsive Design",
