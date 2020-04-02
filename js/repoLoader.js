@@ -63,8 +63,14 @@ function gitCallSettings() {
   })
 }
 
-function personalContent(){
-  console.log(personalSettings)
+function personalContent() {
+  console.log(personalSettings.firstName);
+
+  const kolbas = document.querySelector('#kolbas');
+
+  kolbas.innerHTML = `
+   ${personalSettings.firstName}
+  `
 }
 
 gitCallSettings()
