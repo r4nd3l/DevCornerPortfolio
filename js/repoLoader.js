@@ -28,6 +28,9 @@ function gitCallSettings() {
           client_secret = data.gitFetch.clientsecret
 
           personalSettings = data.profileSettings
+
+          personalContent();
+
           // console.log(personalSettings)
 
           getGithubRepositories(progressCallback)
@@ -63,8 +66,17 @@ function gitCallSettings() {
   })
 }
 
-function personalContent(){
-  console.log(personalSettings)
+function personalContent() {
+  console.log(personalSettings.firstName);
+  console.log(personalSettings.lastName);
+
+
+  const kolbas = document.querySelector('#kolbas');
+
+  kolbas.innerHTML = `
+    ${personalSettings.firstName}
+  `
+
 }
 
 gitCallSettings()
