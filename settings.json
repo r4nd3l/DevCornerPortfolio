@@ -65,30 +65,23 @@
       }
     ],
     "skills": {
-      "pLang": [
-        {
-          "html5": "<i title='html5' class='fab fa-html5'></i>",
-          "css3": "<i title='css3' class='fab fa-css3-alt'></i>",
-          "js": "<i title='js' class='fab fa-js-square'></i>",
-          "angular": "<i title='angular' class='fab fa-angular'></i>",
-          "vuejs": "<i title='vuejs' class='fab fa-vuejs'></i>",
-          "nodjs": "<i title='node-js' class='fab fa-node-js'></i>",
-          "wordpress": "<i title='wordpress' class='fab fa-wordpress'></i>",
-          "npm": "<i title='npm' class='fab fa-npm'></i>",
-          "php": "<i title='php' class='fab fa-php'></i></li>"
-        }
-      ],
-      "wflow": [
-        {
-          "agile": "Agile Development & Scrum, Kanban",
-          "Responsive": "Mobile-First, Responsive Design",
-          "uxi": "Web design (UX-UI)",
-          "adobe": "Graphic design (Adobe Ps, Ai, Xd)",
-          "browser": "Cross Browser Testing & Debugging",
-          "git": "Git repository systems",
-          "npm": "OS environments (Linux, Mac, Windows)"
-        }
-      ]
+      "html5": "<i title='html5' class='fab fa-html5'></i>",
+      "css3": "<i title='css3' class='fab fa-css3-alt'></i>",
+      "js": "<i title='js' class='fab fa-js-square'></i>",
+      "angular": "<i title='angular' class='fab fa-angular'></i>",
+      "vuejs": "<i title='vuejs' class='fab fa-vuejs'></i>",
+      "nodjs": "<i title='node-js' class='fab fa-node-js'></i>",
+      "wordpress": "<i title='wordpress' class='fab fa-wordpress'></i>",
+      "npm": "<i title='npm' class='fab fa-npm'></i>",
+      "php": "<i title='php' class='fab fa-php'></i></li>",
+
+      "agile": "Agile Development & Scrum, Kanban",
+      "Responsive": "Mobile-First, Responsive Design",
+      "uxi": "Web design (UX-UI)",
+      "adobe": "Graphic design (Adobe Ps, Ai, Xd)",
+      "browser": "Cross Browser Testing & Debugging",
+      "git": "Git repository systems",
+      "npm": "OS environments (Linux, Mac, Windows)"
     },
     "Interests": {
       "paragraph_1": "Sint per eiusmod vitae iaculis sollicitudin ultrices architecto! Temporibus nobis aliquam velit, quos! Dis excepturi ultrices hendrerit porro laboriosam at accusamus minim? Amet nemo excepturi, ea dolor condimentum, aliquam laborum reiciendis molestie? Ex corrupti, laboriosam facilisi. Turpis. Adipisicing tincidunt euismod senectus felis soluta pulvinar praesent soluta reprehenderit, platea iste diam.",
