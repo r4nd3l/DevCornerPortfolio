@@ -38,21 +38,27 @@
     "schoolEducation": [
       {
         "school": "Erhvervsakademi sjælland - Campus Roskilde",
+        "sTitle": "Erhvervsakademi sjælland - Campus Roskilde",
         "course": "BS.c. in web development",
+        "dissLink": "https://www.dropbox.com/s/6hn62qxdk7bzw1s/Dissertation_2018.pdf?dl=0",
         "from": "September 2016",
         "to": "January 2018",
         "description": "Write well designed, testable, efficient code by using software development practices."
       },
       {
         "school": "Zibat - Campus Køge",
+        "sTitle": "Zibat - Zealand Institute of Business and Technology",
         "course": "AP Degree in Multimedia Design & Communication",
+        "dissLink": "https://www.dropbox.com/s/cu6u4dp4ddxho4z/Dissertation_2016.pdf?dl=0",
         "from": "August 2014",
         "to": "May 2016",
         "description": "Create wireframes, storyboards, user flows, process flows and site maps to communicate and design ideas."
       },
       {
         "school": "Gabor Denes Institution - Szeged",
+        "sTitle": "Technical and Environmental Comprehensive School Gabor Denes Member Institution",
         "course": "Cert.H.E. in IT.System Administrator",
+        "dissLink": "none",
         "from": "September 2012",
         "to": "May 2014",
         "description": "Monitor performance and maintain systems according to requirements, manage network servers and technology tools."
