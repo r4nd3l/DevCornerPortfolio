@@ -12,7 +12,7 @@ let reposPerCall
 let client_id
 let client_secret
 
-let personalSettings
+let proSet
 let viewType = "list"
 let currentCateg = []
 
@@ -26,12 +26,10 @@ function gitCallSettings() {
           reposPerCall = data.gitFetch.fetchPerPage
           client_id = data.gitFetch.clientId
           client_secret = data.gitFetch.clientsecret
-
-          personalSettings = data.profileSettings
+          proSet = data.profileSettings
 
           personalContent();
-
-          // console.log(personalSettings)
+          // console.log(proSet)
 
           getGithubRepositories(progressCallback)
             .then(repos => {
@@ -67,16 +65,101 @@ function gitCallSettings() {
 }
 
 function personalContent() {
-  console.log(personalSettings.firstName);
-  console.log(personalSettings.lastName);
+  // console.log(proSet.firstName);
+  // console.log(proSet.lastName);
 
-
-  const kolbas = document.querySelector('#kolbas');
-
-  kolbas.innerHTML = `
-    ${personalSettings.firstName}
+  document.querySelector('.js-name').innerHTML = `
+    <h1 class="mb-0">
+      ${proSet.firstName}
+      <span class="text-primary">${proSet.lastName}</span>
+    </h1>
+    <div class="subheading mb-5">${proSet.address} · ${proSet.city_and_zip} · ${proSet.phone} ·
+      <a href="mailto:matemolnar88@gmail.com">${proSet.email}</a>
+    </div>
+    <p class="lead mb-5">${proSet.bio}</p>
+    <div class="social-icons">
+      <a href="${proSet.url_linkedIn}">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="${proSet.url_github}">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="${proSet.url_facebook}">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="${proSet.url_email}">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
   `
+  function proSetExp(){
+    proSet.workExperiences.forEach((item) => {
+      document.querySelector('.js-workExperiences').innerHTML += `
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">${item.position}</h3>
+            <div class="subheading mb-3">${item.company} <br>
+              <small>${item.place}</small></div>
+            <p>${item.description}</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">${item.from} - ${item.to}</span>
+          </div>
+        </div>
+      `;
+    });
+  }
+  proSetExp();
 
+  function proSetEdu(){
+    proSet.schoolEducation.forEach((item) => {
+      document.querySelector('.js-schoolEducation').innerHTML += `
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0" title="${item.sTitle}">${item.school}</h3>
+            <div class="subheading mb-3">${item.course} ${item.dissLink}</div>
+            <p>Description</p>
+            <div>${item.description}</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">${item.from} - ${item.to}</span>
+          </div>
+        </div>
+      `;
+    });
+  }
+  proSetEdu();
+
+  document.querySelector('.js-Skills').innerHTML = `
+    <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+    <ul class="list-inline dev-icons">
+      <li class="list-inline-item">${proSet.skills.html5}</li>
+      <li class="list-inline-item">${proSet.skills.css3}</li>
+      <li class="list-inline-item">${proSet.skills.js}</li>
+      <li class="list-inline-item">${proSet.skills.angular}</li>
+      <li class="list-inline-item">${proSet.skills.vuejs}</li>
+      <!-- <li class="list-inline-item"><i title="react" class="fab fa-react"></i></li>s -->
+      <li class="list-inline-item">${proSet.skills.nodjs}</li>
+      <!-- <li class="list-inline-item"><i title="sass" class="fab fa-sass"></i></li>s -->
+      <!-- <li class="list-inline-item"><i title="less" class="fab fa-less"></i></li>s -->
+      <li class="list-inline-item">${proSet.skills.wordpress}</li>
+      <!-- <li class="list-inline-item"><i title="gulp" class="fab fa-gulp"></i></li>s -->
+      <!-- <li class="list-inline-item"><i title="grunt" class="fab fa-grunt"></i></li>s -->
+      <li class="list-inline-item">${proSet.skills.npm}</li>
+      <li class="list-inline-item">${proSet.skills.php}</li>
+    </ul>
+
+    <div class="subheading mb-3">Workflow</div>
+    <ul class="fa-ul mb-0">
+      <li><i class="fa-li fa fa-check"></i>${proSet.skills.agile}</li>
+      <li><i class="fa-li fa fa-check"></i>${proSet.skills.Responsive}</li>
+      <li><i class="fa-li fa fa-check"></i>${proSet.skills.uxi}</li>
+      <li><i class="fa-li fa fa-check"></i>${proSet.skills.adobe}</li>
+      <li><i class="fa-li fa fa-check"></i>${proSet.skills.browser}</li>
+      <li><i class="fa-li fa fa-check"></i>${proSet.skills.git}</li>
+      <li><i class="fa-li fa fa-check"></i>${proSet.skills.npm}</li>
+    </ul>
+  `
 }
 
 gitCallSettings()
