@@ -138,13 +138,8 @@ function personalContent() {
       <li class="list-inline-item">${proSet.skills.js}</li>
       <li class="list-inline-item">${proSet.skills.angular}</li>
       <li class="list-inline-item">${proSet.skills.vuejs}</li>
-      <!-- <li class="list-inline-item"><i title="react" class="fab fa-react"></i></li>s -->
       <li class="list-inline-item">${proSet.skills.nodjs}</li>
-      <!-- <li class="list-inline-item"><i title="sass" class="fab fa-sass"></i></li>s -->
-      <!-- <li class="list-inline-item"><i title="less" class="fab fa-less"></i></li>s -->
       <li class="list-inline-item">${proSet.skills.wordpress}</li>
-      <!-- <li class="list-inline-item"><i title="gulp" class="fab fa-gulp"></i></li>s -->
-      <!-- <li class="list-inline-item"><i title="grunt" class="fab fa-grunt"></i></li>s -->
       <li class="list-inline-item">${proSet.skills.npm}</li>
       <li class="list-inline-item">${proSet.skills.php}</li>
     </ul>
