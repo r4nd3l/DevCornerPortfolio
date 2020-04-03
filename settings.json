@@ -74,6 +74,7 @@
       "wordpress": "<i title='wordpress' class='fab fa-wordpress'></i>",
       "npm": "<i title='npm' class='fab fa-npm'></i>",
       "php": "<i title='php' class='fab fa-php'></i></li>",
+      
       "agile": "Agile Development & Scrum, Kanban",
       "Responsive": "Mobile-First, Responsive Design",
       "uxi": "Web design (UX-UI)",

@@ -152,7 +152,7 @@ function personalContent() {
       <li><i class="fa-li fa fa-check"></i>${proSet.skills.adobe}</li>
       <li><i class="fa-li fa fa-check"></i>${proSet.skills.browser}</li>
       <li><i class="fa-li fa fa-check"></i>${proSet.skills.git}</li>
-      <li><i class="fa-li fa fa-check"></i>${proSet.skills.npm}</li>
+      <li><i class="fa-li fa fa-check"></i>${proSet.skills.os}</li>
     </ul>
   `
 }
