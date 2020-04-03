@@ -167,17 +167,17 @@ function personalContent() {
     <div class="mb-5">
       <div class="subheading mb-3">Cisco Certified Network Associate</div>
       <ul class="fa-ul mb-0">
-        <li class="mb-2"><i class="fa-li fas fa-award text-warning"></i>${proSet.CCNA_1}</li>
-        <li class="mb-2"><i class="fa-li fas fa-award text-warning"></i>${proSet.CCNA_2}</li>
-        <li class="mb-2"><i class="fa-li fas fa-award text-warning"></i>${proSet.CCNA_3}</li>
-        <li class="mb-2"><i class="fa-li fas fa-award text-warning"></i>${proSet.CCNA_4}</li>
+        <li class="mb-2"><i class="fa-li fas fa-award text-warning"></i>${proSet.cert.CCNA_1}</li>
+        <li class="mb-2"><i class="fa-li fas fa-award text-warning"></i>${proSet.cert.CCNA_2}</li>
+        <li class="mb-2"><i class="fa-li fas fa-award text-warning"></i>${proSet.cert.CCNA_3}</li>
+        <li class="mb-2"><i class="fa-li fas fa-award text-warning"></i>${proSet.cert.CCNA_4}</li>
       </ul>
     </div>
     <div class="mb-5">
       <div class="subheading mb-3">Information Technology of PC Hardware and Software</div>
       <ul class="fa-ul mb-0">
-        <li class="mb-2"><i class="fa-li fas fa-award text-warning fa-lg"></i>${proSet.IT_1}</li>
-        <li class="mb-2"><i class="fa-li fas fa-award text-warning fa-lg"></i>${proSet.IT_2}</li>
+        <li class="mb-2"><i class="fa-li fas fa-award text-warning fa-lg"></i>${proSet.cert.IT_1}</li>
+        <li class="mb-2"><i class="fa-li fas fa-award text-warning fa-lg"></i>${proSet.cert.IT_2}</li>
       </ul>
     </div>
   `
