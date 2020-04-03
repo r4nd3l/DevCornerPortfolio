@@ -155,6 +155,32 @@ function personalContent() {
       <li><i class="fa-li fa fa-check"></i>${proSet.skills.os}</li>
     </ul>
   `
+
+  // document.querySelector('.js-ints').innerHTML = `
+  //
+  // `
+
+  document.querySelector('.js-cert').innerHTML = `
+    <h2 class="mb-5">Certifications <a
+        href="https://www.dropbox.com/sh/wcp304fo3bo5rwi/AAA9p13kFUKjNZfs229akMuOa?dl=0" target="_blank"
+        title="CISCO Certifications"><i class="fas fa-external-link-alt"></i></a></h2>
+    <div class="mb-5">
+      <div class="subheading mb-3">Cisco Certified Network Associate</div>
+      <ul class="fa-ul mb-0">
+        <li class="mb-2"><i class="fa-li fas fa-award text-warning"></i>${proSet.CCNA_1}</li>
+        <li class="mb-2"><i class="fa-li fas fa-award text-warning"></i>${proSet.CCNA_2}</li>
+        <li class="mb-2"><i class="fa-li fas fa-award text-warning"></i>${proSet.CCNA_3}</li>
+        <li class="mb-2"><i class="fa-li fas fa-award text-warning"></i>${proSet.CCNA_4}</li>
+      </ul>
+    </div>
+    <div class="mb-5">
+      <div class="subheading mb-3">Information Technology of PC Hardware and Software</div>
+      <ul class="fa-ul mb-0">
+        <li class="mb-2"><i class="fa-li fas fa-award text-warning fa-lg"></i>${proSet.IT_1}</li>
+        <li class="mb-2"><i class="fa-li fas fa-award text-warning fa-lg"></i>${proSet.IT_2}</li>
+      </ul>
+    </div>
+  `
 }
 
 gitCallSettings()

@@ -74,7 +74,7 @@
       "wordpress": "<i title='wordpress' class='fab fa-wordpress'></i>",
       "npm": "<i title='npm' class='fab fa-npm'></i>",
       "php": "<i title='php' class='fab fa-php'></i></li>",
-      
+
       "agile": "Agile Development & Scrum, Kanban",
       "Responsive": "Mobile-First, Responsive Design",
       "uxi": "Web design (UX-UI)",
@@ -83,25 +83,18 @@
       "git": "Git repository systems",
       "os": "OS environments (Linux, Mac, Windows)"
     },
-    "Interests": {
+    "ints": {
       "paragraph_1": "Sint per eiusmod vitae iaculis sollicitudin ultrices architecto! Temporibus nobis aliquam velit, quos! Dis excepturi ultrices hendrerit porro laboriosam at accusamus minim? Amet nemo excepturi, ea dolor condimentum, aliquam laborum reiciendis molestie? Ex corrupti, laboriosam facilisi. Turpis. Adipisicing tincidunt euismod senectus felis soluta pulvinar praesent soluta reprehenderit, platea iste diam.",
       "paragraph_2": "Facilisi metus quam porta facere eget aenean? Natus praesentium alias pariatur suscipit, consectetur ridiculus maiores sollicitudin pellentesque repellat, do urna expedita, quam, sociosqu ornare aspernatur lacus ad ultricies consequuntur nihil, totam mi neque nisl. Rem ex, alias magna expedita, vero! Earum iusto incididunt officiis nam facilisis dolores penatibus iure incidunt."
     },
-    "Certifications": {
-      "CISCO Certified Network Associate": [
-        {
-          "CCNA_1": "CCNA Discovery Designing & Supporting Computer Networks",
-          "CCNA_2": "CCNA Discovery Introduciong Routing & Switching in the Enterprise",
-          "CCNA_3": "CCNA Discovery Network for Home & Small Business",
-          "CCNA_4": "CCNA Discovery Working at a Small to Medium Business or ISP"
-        }
-      ],
-      "Information Technology of PC Hardware and Software": [
-        {
-          "IT_1": "IT Essentials",
-          "IT_2": "IT Essentials - PC Hardware & Software"
-        }
-      ]
+    "cert": {
+      "CCNA_1": "CCNA Discovery Designing & Supporting Computer Networks",
+      "CCNA_2": "CCNA Discovery Introduciong Routing & Switching in the Enterprise",
+      "CCNA_3": "CCNA Discovery Network for Home & Small Business",
+      "CCNA_4": "CCNA Discovery Working at a Small to Medium Business or ISP",
+
+      "IT_1": "IT Essentials",
+      "IT_2": "IT Essentials - PC Hardware & Software"
     },
     "Portfolio": {
       "GitHub_url": "https://github.com/r4nd3l/"
