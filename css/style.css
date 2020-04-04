@@ -319,3 +319,39 @@ a:hover, a:focus, a:active {
   animation-name: fadeIn;
 }
 /* portfolio box animation - END*/
+
+/* Tooltip */
+.preview{
+  position: relative;
+}
+
+.preview img{
+  width: 900px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 1em;
+  box-shadow: var(--shadow1-);
+  cursor: pointer;
+}
+
+#tooltip{
+  position: fixed;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  color: #000;
+  font-size: 2.5em;
+  font-weight: 700;
+  padding: 5px 20px;
+  box-shadow: var(--shadow1-);
+}
+
+.preview:hover #tooltip{
+  opacity: 1;
+  visibility: visible;
+  border-radius: 0.2em;
+  color: var(--gr-);
+  background: var(--sg-);
+}
+/* Tooltip - END */

@@ -44,26 +44,15 @@ $(document).ready(function(){
   });
 });
 
+// tooltip Setting
+var spanText = document.getElementById('tooltip');
+window.onmousemove = function(e){
+  var x = e.clientX,
+      y = e.clientY;
 
-// fetch all the personal content
-// "use strict";
-//
-// var myInit = {method: 'GET',
-//               headers: {
-//                 'Content-Type': 'application/json'
-//               },
-//               mode: 'cors',
-//               cache: 'default' };
-//
-// let myRequest = new Request('https://r4nd3l.github.io/DevCornerPortfolio/profile_content.json', myInit);
-//
-// fetch(myRequest)
-//   .then(function(resp){
-//     return resp.json();
-//   });
-//   .then(function(data){
-//     console.log(data.profileContent);
-//   });
+  spanText.style.top = (y + 20) + 'px';
+  spanText.style.left = (x + 20) + 'px';
+}
 
 
 

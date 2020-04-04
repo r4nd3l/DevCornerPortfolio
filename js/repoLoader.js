@@ -213,37 +213,37 @@ function buildRepoList(categoryArray) {
 
   if (viewType == "grid") {
     categoryArray.forEach(item => {
-      newContent +=
-        `<div class="box" data-id="all">
-                  <div class="inner">
-                    GRID STYLE
-                    ${item.name}
-                    <small>${item.description}</small>
-                  </div>
-                  <div class="ext-set">
-                    <a href="https://github.com/r4nd3l/${item.name}/" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                  </div>
-              </div>`
-    })
+      newContent +=`
+        <div class="box" data-id="all">
+          <div class="inner">
+            GRID STYLE
+            ${item.name}
+            <small>${item.description}</small>
+          </div>
+          <div class="ext-set">
+            <a href="https://github.com/r4nd3l/${item.name}/" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      `})
   }
   else {
     categoryArray.forEach(item => {
-      newContent +=
-        `<div class="box" data-id="all">
-                  <div class="inner">
-                    LIST STYLE
-                    ${item.name}
-                    <small>${item.description}</small>
-                  </div>
-                  <div class="ext-set">
-                    <a href="https://github.com/r4nd3l/${item.name}/" target="_blank">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                  </div>
-              </div>`
-    })
+      newContent +=`
+        <div class="box" data-id="all">
+          <div class="inner">
+            LIST STYLE
+            ${item.name}
+            <small>${item.description}</small>
+          </div>
+          <div class="ext-set">
+            <a href="https://github.com/r4nd3l/${item.name}/" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      `})
   }
   currentCateg = categoryArray
   document.getElementById("items").innerHTML = newContent;
