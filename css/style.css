@@ -326,15 +326,15 @@ a:hover, a:focus, a:active {
 }
 
 .preview img{
-  width: 900px;
-  height: 500px;
+  width: 300px;
+  height: 150px;
   object-fit: cover;
   border-radius: 1em;
   box-shadow: var(--shadow1-);
   cursor: pointer;
 }
 
-#tooltip{
+.tooltip{
   position: fixed;
   display: block;
   opacity: 0;
@@ -347,11 +347,12 @@ a:hover, a:focus, a:active {
   box-shadow: var(--shadow1-);
 }
 
-.preview:hover #tooltip{
+.preview:hover .tooltip{
   opacity: 1;
   visibility: visible;
   border-radius: 0.2em;
   color: var(--gr-);
   background: var(--sg-);
+  z-index: 1;
 }
 /* Tooltip - END */

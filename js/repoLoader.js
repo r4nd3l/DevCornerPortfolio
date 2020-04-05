@@ -194,7 +194,7 @@ function getGithubRepositories(progress, url = `https://api.github.com/users/${g
       response.json().then(data => {
         repos = repos.concat(data);
 
-        if (data.length == reposPerCall) {
+        if (data.length === reposPerCall) {
           pageCount++;
           url = `https://api.github.com/users/${gitId}/repos?page=${pageCount}&per_page=${reposPerCall}&client_id=${client_id}&client_secret=${client_secret} `
           progress && progress(repos);

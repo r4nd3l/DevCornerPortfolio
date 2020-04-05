@@ -45,16 +45,25 @@ $(document).ready(function(){
 });
 
 // tooltip Setting
-var spanText = document.getElementById('tooltip');
+// var spanText = document.querySelectorAll('.tooltip');
+// window.onmousemove = function(e){
+//   var x = e.clientX,
+//       y = e.clientY;
+//
+//   spanText.style.top = (y + 20) + 'px';
+//   spanText.style.left = (x + 20) + 'px';
+// }
+
+var spanText = document.querySelectorAll('.tooltip');
 window.onmousemove = function(e){
   var x = e.clientX,
-      y = e.clientY;
+  y = e.clientY;
 
-  spanText.style.top = (y + 20) + 'px';
-  spanText.style.left = (x + 20) + 'px';
+  for (i = 0; i < spanText.length; i++) {
+    spanText[i].style.top = (y + 20) + 'px';
+    spanText[i].style.left = (x + 20) + 'px';
+  }
 }
-
-
 
 
 
