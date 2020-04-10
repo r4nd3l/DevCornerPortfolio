@@ -157,16 +157,17 @@ function personalContent() {
   `
 
   function interests(){
-    proSet.schoolEducation.forEach((item) => {
+    proSet.ints.forEach((item) => {
       document.querySelector('.js-ints').innerHTML += `
-      <p class="preview" alt="tooltip_pic">
-        ${proSet.ints.paragraph}
-        <span id="tooltip"><img src="img/mate.jpg" alt="sample"></span>
-      </p>
+        <p class="preview" alt="tooltip_pic">
+          ${item.paragraph}
+          <span id="tooltip"><img src="img/mate.jpg" alt="sample"></span>
+        </p>
       `;
     });
   }
   interests();
+  tooltip()
 
   document.querySelector('.js-cert').innerHTML = `
     <h2 class="mb-5">Certifications <a
@@ -244,14 +245,6 @@ function buildRepoList(categoryArray) {
             LIST STYLE
             ${item.name}
             <small>${item.description}</small>
-
-            <p class="preview" alt="tooltip_pic">
-              YouTube channel
-
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus ducimus doloremque, amet dolores aut, necessitatibus debitis, vitae natus ea provident odio in! Quo tempore neque alias delectus sequi natus inventore placeat voluptatum cumque consequuntur officia quidem a, aspernatur sapiente dolores qui commodi eveniet ea labore? Similique praesentium accusamus molestiae.
-              <span id="tooltip"><img src="https://raw.githubusercontent.com/r4nd3l/${item.name}/master/img/${item.name}.png" alt="sample"></span>
-            </p>
-
           </div>
         </div>
       `})
