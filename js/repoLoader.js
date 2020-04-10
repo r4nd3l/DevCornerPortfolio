@@ -239,7 +239,7 @@ function buildRepoList(categoryArray) {
             ${item.name}
             <small>${item.description}</small>
           </div>
-          <span id="tooltip"><img src="https://raw.githubusercontent.com/r4nd3l/${item.name}/master/img/${item.name}.png" alt="sample"></span>
+          <span id="tooltip"><img src="https://raw.githubusercontent.com/r4nd3l/${item.name}/master/img/${item.name}.png" alt="${item.name}"></span>
         </div>
       `})
   }

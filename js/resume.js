@@ -44,37 +44,6 @@ $(document).ready(function(){
   });
 });
 
-// var spanText = document.getElementById('tooltip');
-// window.onmousemove = function(e){
-//   var x = e.clientX,
-//       y = e.clientY;
-//
-//   spanText.style.top = (y + 20) + 'px';
-//   spanText.style.left = (x + 20) + 'px';
-// }
-
-// var spanText = document.querySelector('#tooltip');
-// window.onmousemove = function(e){
-//   var x = e.clientX,
-//       y = e.clientY;
-//
-//   spanText.style.top = (y + 20) + 'px';
-//   spanText.style.left = (x + 20) + 'px';
-// }
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   var spanText = document.querySelectorAll('#tooltip');
-//   window.onmousemove = function(e){
-//     var x = e.clientX,
-//     y = e.clientY;
-//
-//     for (i = 0; i < spanText.length; i++) {
-//       spanText[i].style.top = (y + 20) + 'px';
-//       spanText[i].style.left = (x + 20) + 'px';
-//     }
-//   }
-// });
-
 function tooltip(){
   var spanText = document.querySelectorAll('#tooltip');
   window.onmousemove = function(e){
