@@ -233,7 +233,11 @@ function buildRepoList(categoryArray) {
       newContent +=`
         <div class="box" data-id="all">
           <div class="inner">
-            LIST STYLE
+            <p class="preview" alt="tooltip_pic">
+              LIST STYLE
+              <span class="tooltip"><img src="https://raw.githubusercontent.com/r4nd3l/${item.name}/master/img/${item.name}.png" alt="sample"></span>
+            </p>
+
             ${item.name}
             <small>${item.description}</small>
           </div>
@@ -248,7 +252,6 @@ function buildRepoList(categoryArray) {
   currentCateg = categoryArray
   document.getElementById("items").innerHTML = newContent;
 }
-
 
 document.querySelector("[data-target='all']").addEventListener("click", () => { buildRepoList(categoryAll) });
 document.querySelector("[data-target='Js']").addEventListener("click", () => { buildRepoList(categoryJS) });
