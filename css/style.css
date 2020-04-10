@@ -259,14 +259,6 @@ a:hover, a:focus, a:active {
   /* width: inherit; */
 }
 
-.w-100 .items a{
-  color: var(--gr2-);
-  text-decoration: none;
-}
-.w-100 .items a:hover{
-  color: var(--dc-);
-  text-decoration: none;
-}
 .w-100 .items .box .inner{
   float: left;
   color: var(--dc-);
@@ -274,14 +266,6 @@ a:hover, a:focus, a:active {
 }
 .w-100 .items .box .inner small{
   color: var(--gr2-);
-}
-.w-100 .items .box .ext-set{
-  float: right;
-  display: none;
-}
-.w-100 .items .box:hover .ext-set{
-  float: right;
-  display: block;
 }
 
 /* portfolio section - END */
@@ -334,7 +318,7 @@ a:hover, a:focus, a:active {
   cursor: pointer;
 }
 
-.tooltip{
+#tooltip{
   position: fixed;
   display: block;
   opacity: 0;
@@ -347,7 +331,7 @@ a:hover, a:focus, a:active {
   box-shadow: var(--shadow1-);
 }
 
-.preview:hover .tooltip{
+.preview:hover #tooltip{
   opacity: 1;
   visibility: visible;
   border-radius: 0.2em;

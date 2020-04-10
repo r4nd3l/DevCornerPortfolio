@@ -156,9 +156,17 @@ function personalContent() {
     </ul>
   `
 
-  // document.querySelector('.js-ints').innerHTML = `
-  //
-  // `
+  function interests(){
+    proSet.schoolEducation.forEach((item) => {
+      document.querySelector('.js-ints').innerHTML += `
+      <p class="preview" alt="tooltip_pic">
+        ${proSet.ints.paragraph}
+        <span id="tooltip"><img src="img/mate.jpg" alt="sample"></span>
+      </p>
+      `;
+    });
+  }
+  interests();
 
   document.querySelector('.js-cert').innerHTML = `
     <h2 class="mb-5">Certifications <a
@@ -233,18 +241,17 @@ function buildRepoList(categoryArray) {
       newContent +=`
         <div class="box" data-id="all">
           <div class="inner">
-            <p class="preview" alt="tooltip_pic">
-              LIST STYLE
-              <span class="tooltip"><img src="https://raw.githubusercontent.com/r4nd3l/${item.name}/master/img/${item.name}.png" alt="sample"></span>
-            </p>
-
+            LIST STYLE
             ${item.name}
             <small>${item.description}</small>
-          </div>
-          <div class="ext-set">
-            <a href="https://github.com/r4nd3l/${item.name}/" target="_blank">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
+
+            <p class="preview" alt="tooltip_pic">
+              YouTube channel
+
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus ducimus doloremque, amet dolores aut, necessitatibus debitis, vitae natus ea provident odio in! Quo tempore neque alias delectus sequi natus inventore placeat voluptatum cumque consequuntur officia quidem a, aspernatur sapiente dolores qui commodi eveniet ea labore? Similique praesentium accusamus molestiae.
+              <span id="tooltip"><img src="https://raw.githubusercontent.com/r4nd3l/${item.name}/master/img/${item.name}.png" alt="sample"></span>
+            </p>
+
           </div>
         </div>
       `})

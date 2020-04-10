@@ -44,7 +44,7 @@ $(document).ready(function(){
   });
 });
 
-var spanText = document.querySelectorAll('.tooltip');
+var spanText = document.querySelectorAll('#tooltip');
 window.onmousemove = function(e){
   var x = e.clientX,
   y = e.clientY;
