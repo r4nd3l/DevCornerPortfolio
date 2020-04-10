@@ -61,7 +61,7 @@ function gitCallSettings() {
 
         }).catch(reject)
       }).catch(reject)
-  })
+  });
 }
 
 function personalContent() {
@@ -159,15 +159,13 @@ function personalContent() {
   function interests(){
     proSet.ints.forEach((item) => {
       document.querySelector('.js-ints').innerHTML += `
-        <p class="preview" alt="tooltip_pic">
-          ${item.paragraph}
-          <span id="tooltip"><img src="img/mate.jpg" alt="sample"></span>
-        </p>
+        ${item.paragraph}
       `;
     });
   }
   interests();
-  tooltip()
+  // called from resume.js - tooltip func
+  // tooltip();
 
   document.querySelector('.js-cert').innerHTML = `
     <h2 class="mb-5">Certifications <a
@@ -229,28 +227,26 @@ function buildRepoList(categoryArray) {
             ${item.name}
             <small>${item.description}</small>
           </div>
-          <div class="ext-set">
-            <a href="https://github.com/r4nd3l/${item.name}/" target="_blank">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
         </div>
       `})
   }
   else {
     categoryArray.forEach(item => {
       newContent +=`
-        <div class="box" data-id="all">
+        <div class="box preview" data-id="all">
           <div class="inner">
             LIST STYLE
             ${item.name}
             <small>${item.description}</small>
           </div>
+          <span id="tooltip"><img src="https://raw.githubusercontent.com/r4nd3l/${item.name}/master/img/${item.name}.png" alt="sample"></span>
         </div>
       `})
   }
   currentCateg = categoryArray
   document.getElementById("items").innerHTML = newContent;
+  // called from resume.js - tooltip func
+  tooltip();
 }
 
 document.querySelector("[data-target='all']").addEventListener("click", () => { buildRepoList(categoryAll) });
