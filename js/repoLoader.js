@@ -227,8 +227,11 @@ function buildRepoList(categoryArray) {
             <img src="https://raw.githubusercontent.com/r4nd3l/${item.name}/master/img/${item.name}.png" class="card-img-top" alt="${item.name}">
             <div class="card-body">
               <h6 class="card-title">${item.name}</h6>
-              <small class="card-text">${item.description}</small>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <p class="card-text">${item.description}</p><hr>
+              <div class="card-link">
+                <a href="https://r4nd3l.github.io/${item.name}/" target="_blank"><span title="Live preview"><i class="fas fa-glasses"></i></span></a>
+                <a href="${item.html_url}" target="_blank"><span title="GitHub repo"><i class="fas fa-external-link-alt"></i></span></a>
+              </div>
             </div>
           </div>
         </div>
