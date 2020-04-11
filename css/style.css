@@ -42,6 +42,7 @@ h3 {
   font-size: 2rem;
 }
 
+.w-100 .mb-0 i,
 .w-100 .mb-5 i{
   font-size: 0.55em;
   vertical-align: middle;
@@ -214,6 +215,10 @@ a:hover, a:focus, a:active {
   cursor: pointer;
   font-size: 16px;
   border: 1px solid var(--dc-);
+}
+.w-100 .filter-btn #buttons li:hover{
+  background-color: var(--wh-);
+  color: var(--dc-);
 }
 .w-100 .filter-btn #buttons li.active{
   background-color: var(--wh-);
