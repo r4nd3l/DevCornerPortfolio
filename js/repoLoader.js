@@ -159,7 +159,7 @@ function personalContent() {
   function interests(){
     proSet.ints.forEach((item) => {
       document.querySelector('.js-ints').innerHTML += `
-        ${item.paragraph}
+        <div class="mb-3">${item.paragraph}</div>
       `;
     });
   }
@@ -219,11 +219,11 @@ function buildRepoList(categoryArray) {
   newContent = ""
 
   if (viewType == "grid") {
+    // GRID STYLE
     categoryArray.forEach(item => {
       newContent +=`
         <div class="box" data-id="all">
           <div class="inner">
-            GRID STYLE
             ${item.name}
             <small>${item.description}</small>
           </div>
@@ -231,15 +231,20 @@ function buildRepoList(categoryArray) {
       `})
   }
   else {
+    // LIST STYLE
     categoryArray.forEach(item => {
       newContent +=`
-        <div class="box preview" data-id="all">
-          <div class="inner">
-            LIST STYLE
+        <div class="box" data-id="all">
+          <div class="inner preview">
             ${item.name}
             <small>${item.description}</small>
+            <span id="tooltip"><img src="https://raw.githubusercontent.com/r4nd3l/${item.name}/master/img/${item.name}.png" alt="${item.name}"></span>
           </div>
-          <span id="tooltip"><img src="https://raw.githubusercontent.com/r4nd3l/${item.name}/master/img/${item.name}.png" alt="${item.name}"></span>
+          <div class="outer">
+            <span class=""><i class="fas fa-external-link-alt"></i></span>
+            <span class=""><i class="fas fa-external-link-alt"></i></span>
+            <span class=""><i class="fas fa-external-link-alt"></i></span>
+          </div>
         </div>
       `})
   }

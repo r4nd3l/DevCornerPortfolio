@@ -256,6 +256,7 @@ a:hover, a:focus, a:active {
   margin-bottom: 0.8em;
   font-size: 1.1em;
   background: var(--sg-);
+  padding: 0;
   /* width: inherit; */
 }
 
@@ -263,9 +264,25 @@ a:hover, a:focus, a:active {
   float: left;
   color: var(--dc-);
   display: inline-grid;
+  padding: 0.5em 1em;
 }
 .w-100 .items .box .inner small{
   color: var(--gr2-);
+}
+.w-100 .items .box .outer{
+
+}
+.w-100 .items .box .outer span{
+  float: right;
+  color: var(--dc-);
+  /* border-top: 2px solid white; */
+  /* border-bottom: 2px solid white; */
+  border-left: 5px solid white;
+  margin: 0;
+  padding: 20px 15px;
+}
+.w-100 .items .box .outer span:first-child{
+  /* border-right: 2px solid white; */
 }
 
 /* portfolio section - END */
