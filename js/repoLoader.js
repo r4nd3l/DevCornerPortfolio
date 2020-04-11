@@ -222,10 +222,14 @@ function buildRepoList(categoryArray) {
     // GRID STYLE
     categoryArray.forEach(item => {
       newContent +=`
-        <div class="box" data-id="all">
-          <div class="inner">
-            ${item.name}
-            <small>${item.description}</small>
+        <div class="col-lg-3 col-md-4 col-sm-4">
+          <div class="card">
+            <img src="https://raw.githubusercontent.com/r4nd3l/${item.name}/master/img/${item.name}.png" class="card-img-top" alt="${item.name}">
+            <div class="card-body">
+              <h6 class="card-title">${item.name}</h6>
+              <small class="card-text">${item.description}</small>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
         </div>
       `})
@@ -272,6 +276,7 @@ function viewFlex() {
   buildRepoList(currentCateg)
   document.getElementById('items').style.cssText = `
     display: flex;
+    width: 101.25%;
   `
   document.getElementById('list_btn').classList.remove("active");
   document.getElementById('grid_btn').classList.add("active");
@@ -284,6 +289,7 @@ function viewList() {
   buildRepoList(currentCateg)
   document.getElementById('items').style.cssText = `
     display: grid;
+    width: 100%;
   `
   document.getElementById('grid_btn').classList.remove("active");
   document.getElementById('list_btn').classList.add("active");

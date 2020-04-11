@@ -366,3 +366,54 @@ a:hover, a:focus, a:active {
   z-index: 1;
 }
 /* Tooltip - END */
+
+/* List View */
+.card{
+  position:relative;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  min-width:0;
+  word-wrap:break-word;
+  background-color: var(--sg-);
+  background-clip:border-box;
+  border:1px solid var(--lg-);
+}
+.card-body{
+  -ms-flex:1 1 auto;
+  flex:1 1 auto;
+  min-height:1px;
+  padding:1.25rem
+}
+.card-title{
+  color: var(--dc-);
+  margin-bottom:.75rem
+}
+.card-text:last-child{
+  color: var(--gr2-);
+  margin-bottom:0
+}
+.card-img,.card-img-top{
+  -ms-flex-negative:0;
+  flex-shrink:0;
+  flex-shrink: 0; */
+  object-fit: cover;
+  width: auto;
+  height: 10em;
+}
+.card-img,.card-img-top{
+  /* border-top-left-radius: 2px; */
+  /* border-top-right-radius: 2px */
+}
+.card-img{
+  /* border-bottom-right-radius: 2px; */
+  /* border-bottom-left-radius: 2px; */
+}
+.col-lg-3.col-md-4.col-sm-4{
+  padding-left: 0;
+}
+.col-lg-3.col-md-4.col-sm-4:nth-child(4n+1){
+  /* padding-left: 0; */
+}
+/* List View - END */
