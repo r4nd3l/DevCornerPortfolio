@@ -265,6 +265,7 @@ a:hover, a:focus, a:active {
   color: var(--dc-);
   display: inline-grid;
   padding: 0.5em 1em;
+  width: 90%;
 }
 .w-100 .items .box .inner small{
   color: var(--gr2-);
@@ -280,6 +281,11 @@ a:hover, a:focus, a:active {
   border-left: 5px solid white;
   margin: 0;
   padding: 20px 15px;
+}
+.w-100 .items .box .outer span:hover{
+  color: var(--wh-);
+  background: var(--dc-);
+  cursor: pointer;
 }
 .w-100 .items .box .outer span:first-child{
   /* border-right: 2px solid white; */

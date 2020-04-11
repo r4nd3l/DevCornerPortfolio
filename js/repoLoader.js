@@ -241,9 +241,9 @@ function buildRepoList(categoryArray) {
             <span id="tooltip"><img src="https://raw.githubusercontent.com/r4nd3l/${item.name}/master/img/${item.name}.png" alt="${item.name}"></span>
           </div>
           <div class="outer">
-            <span class=""><i class="fas fa-external-link-alt"></i></span>
-            <span class=""><i class="fas fa-external-link-alt"></i></span>
-            <span class=""><i class="fas fa-external-link-alt"></i></span>
+            <a href="${item.html_url}" target="_blank"><span title="GitHub repo"><i class="fas fa-external-link-alt"></i></span></a>
+            <a href="https://r4nd3l.github.io/${item.name}/" target="_blank"><span title="Live preview"><i class="fas fa-glasses"></i></span></a>
+            <!-- <span title="blank"><i class="far fa-eye"></i></span> -->
           </div>
         </div>
       `})
