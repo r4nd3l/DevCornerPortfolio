@@ -388,9 +388,10 @@ a:hover, a:focus, a:active {
   color: var(--dc-);
   margin-bottom:.75rem;
   text-transform: initial;
-
-  white-space: nowrap;
   width: 100%;
+
+  /* single-line truncate */
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -399,11 +400,13 @@ a:hover, a:focus, a:active {
   margin-bottom:0.5em;
   font-size: 0.9em;
   text-align: justify;
-
-  white-space: nowrap;
   width: 100%;
+
+  /* multi-line truncate */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 hr{
   margin: 0.5em auto 0.5em;
