@@ -264,7 +264,6 @@ a:hover, a:focus, a:active {
   padding: 0;
   /* width: inherit; */
 }
-
 .w-100 .items .box .inner{
   float: left;
   color: var(--dc-);
@@ -273,9 +272,6 @@ a:hover, a:focus, a:active {
 }
 .w-100 .items .box .inner small{
   color: var(--gr2-);
-}
-.w-100 .items .box .outer{
-
 }
 .w-100 .items .box .outer span{
   float: right;
@@ -378,10 +374,9 @@ a:hover, a:focus, a:active {
   word-wrap:break-word;
   background-color: var(--sg-);
   background-clip:border-box;
-
-  border: 1px solid var(--dw-);
+  /* border: 1px solid var(--dw-); */
   border: 1px solid var(--lg-);
-  box-shadow: var(--shadow0-);
+  /* box-shadow: var(--shadow0-); */
 }
 .card-body{
   -ms-flex:1 1 auto;
@@ -404,7 +399,11 @@ a:hover, a:focus, a:active {
   margin-bottom:0.5em;
   font-size: 0.9em;
   text-align: justify;
-  text-justify: inter-word;
+
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 hr{
   margin: 0.5em auto 0.5em;
@@ -416,6 +415,9 @@ hr{
 }
 .card-link a{
   margin: 0 0 0 0.5em;
+}
+.card-link a:hover{
+  color: var(--gr2-);
 }
 .card-img,.card-img-top{
   -ms-flex-negative:0;
