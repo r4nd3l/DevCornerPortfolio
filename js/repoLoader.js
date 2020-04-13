@@ -273,39 +273,45 @@ document.querySelector("[data-target='Tool']").addEventListener("click", () => {
 
 
 // Change grid view to list view at portfolio section
-document.getElementById("grid_btn").addEventListener("click", viewFlex);
+var grid_btn = document.getElementById('grid_btn');
+var list_btn = document.getElementById('list_btn');
+var grid_items = document.getElementById('items');
+
+grid_btn.addEventListener("click", viewFlex);
 function viewFlex() {
   viewType = "grid"
   buildRepoList(currentCateg)
-  document.getElementById('items').style.cssText = `
+  grid_items.style.cssText = `
     display: flex;
     width: 101.25%;
   `
-  document.getElementById('list_btn').classList.remove("active");
-  document.getElementById('grid_btn').classList.add("active");
-  document.getElementById('items').style.animation = "fadeIn 1s";
+  list_btn.classList.remove("active");
+  grid_btn.classList.add("active");
+  grid_items.style.animation = "fadeIn 1s";
 }
 
-document.getElementById("list_btn").addEventListener("click", viewList);
+list_btn.addEventListener("click", viewList);
 function viewList() {
   viewType = "list"
   buildRepoList(currentCateg)
-  document.getElementById('items').style.cssText = `
+  grid_items.style.cssText = `
     display: grid;
     width: 100%;
   `
-  document.getElementById('grid_btn').classList.remove("active");
-  document.getElementById('list_btn').classList.add("active");
-  document.getElementById('items').style.animation = "fadeIn 1s";
+  grid_btn.classList.remove("active");
+  list_btn.classList.add("active");
+  grid_items.style.animation = "fadeIn 1s";
 }
 
 // add and remove grid/list view
-document.getElementById("grid_btn").onmouseover = function () { mouseOver() };
-document.getElementById("list_btn").onmouseout = function () { mouseOut() };
+grid_btn.onmouseover = function () { mouseOver() };
+list_btn.onmouseout = function () { mouseOut() };
 
 function mouseOver() {
-  document.getElementById("items").style.animation = "none";
+  grid_items.style.animation = "none";
 }
 function mouseOut() {
-  document.getElementById("items").style.animation = "none";
+  grid_items.style.animation = "none";
 }
+
+// INTERESTS section - Wordpress content API
