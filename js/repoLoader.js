@@ -156,14 +156,15 @@ function personalContent() {
     </ul>
   `
 
-  function interests(){
-    proSet.ints.forEach((item) => {
-      document.querySelector('.js-ints').innerHTML += `
-        <div class="mb-3">${item.paragraph}</div>
-      `;
-    });
-  }
-  interests();
+  // function interests(){
+  //   proSet.ints.forEach((item) => {
+  //     document.querySelector('.js-ints').innerHTML += `
+  //       <div class="mb-3">${item.paragraph}</div>
+  //     `;
+  //   });
+  // }
+  // interests();
+  
   // called from resume.js - tooltip func
   // tooltip();
 
@@ -319,16 +320,33 @@ let wp_content = function () {
   fetch('https://public-api.wordpress.com/wp/v2/sites/internshipmatemolnarblog.wordpress.com/posts?_embed')
     .then(res => res.json())
     .then(data => {
-      console.log(data);
+      // console.log(data);
 
-      var id = data[0].date;
-      console.log(id);
+      var wp_title = data[0].title.rendered;
+      // console.log(wp_title);
 
       document.querySelector('.wp_feed').innerHTML = `
-        <h1>${id}</h1>
+        <div class="card_int">
+          <div class="imgBx">
+            <img src="img/mate.jpg" alt="sample">
+          </div>
+          <div class="details">
+            <div class="content">
+              <h2>${wp_title}<br>
+                <span>Web developer</span>
+              </h2>
+              <ul>
+                <li><a href=""><i class="fab fa-apple"></i></a></li>
+                <li><a href=""><i class="fab fa-android"></i></a></li>
+                <li><a href=""><i class="fab fa-behance"></i></a></li>
+                <li><a href=""><i class="fab fa-codepen"></i></a></li>
+              </ul>
+              <a href="">Read more</a>
+            </div>
+          </div>
+        </div>
       `
-    })
-    .catch(err => console.log(err))
+    }).catch(err => console.log(err))
 }
 wp_content();
 
