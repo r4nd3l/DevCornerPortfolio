@@ -164,7 +164,7 @@ function personalContent() {
   //   });
   // }
   // interests();
-  
+
   // called from resume.js - tooltip func
   // tooltip();
 
@@ -323,25 +323,26 @@ let wp_content = function () {
       // console.log(data);
 
       var wp_title = data[0].title.rendered;
+      var wp_date = data[0].date;
+      var wp_text = data[0].excerpt.rendered;
+      var wp_img = data[0].jetpack_featured_media_url;
+      var wp_img_alt = data[0].slug;
+      var wp_link = data[0].link;
       // console.log(wp_title);
 
       document.querySelector('.wp_feed').innerHTML = `
         <div class="card_int">
           <div class="imgBx">
-            <img src="img/mate.jpg" alt="sample">
+            <img src="${wp_img}" alt="${wp_img_alt}">
           </div>
           <div class="details">
             <div class="content">
-              <h2>${wp_title}<br>
-                <span>Web developer</span>
-              </h2>
+              <h2>${wp_title}<br></h2>
+              <span>${wp_date}</span>
               <ul>
-                <li><a href=""><i class="fab fa-apple"></i></a></li>
-                <li><a href=""><i class="fab fa-android"></i></a></li>
-                <li><a href=""><i class="fab fa-behance"></i></a></li>
-                <li><a href=""><i class="fab fa-codepen"></i></a></li>
+                <li>${wp_text}</li>
               </ul>
-              <a href="">Read more</a>
+              <a href="${wp_link}" target="_blank">Visit blog</a>
             </div>
           </div>
         </div>

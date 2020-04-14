@@ -476,7 +476,7 @@ hr{
   text-decoration:none
 }
 .nav-tabs{
-  border-bottom:1px solid var(--dc-);
+  border-bottom: 1px solid var(--lg-);
 }
 .nav-tabs a{
   color: var(--gr-);
@@ -488,18 +488,18 @@ hr{
   border-top: 1px solid var(--sg-);
   border-left: 1px solid var(--sg-);
   border-right: 1px solid var(--sg-);
-  border-bottom: 1px solid var(--dc-);
+  border-bottom: 1px solid var(--lg-);
   border-top-left-radius: 2px;
-  border-top-right-radius: 2px
+  border-top-right-radius: 2px;
 }
 .nav-tabs .nav-link:focus,.nav-tabs .nav-link:hover{
-  border-color: var(--rgba-dc-);
+  border-color: var(--dw-);
   border-bottom: 1px solid var(--lg-);
 }
 
 .nav-tabs .nav-item.show .nav-link,.nav-tabs .nav-link.active{
-  background: var(--sg-);
-  border-color: var(--dc-);
+  background: var(--wh-);
+  border-color: var(--lg-);
   border-bottom: none;
 }
 .nav-tabs .nav-item.show .nav-link,.nav-tabs .nav-link.active span{
@@ -512,11 +512,7 @@ hr{
 .nav-tabs .nav-item.show .nav-link,.nav-tabs .nav-link.active:nth-child(5),.nav-tabs .nav-link:hover:nth-child(5) i{color: #45b748;} /* DeviantArt */
 
 .tab-content{
-  /* border: 1px solid var(--lg-); */
-  /* border-top: none; */
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  background: var(--sg-);
+  border: none;
 }
 .tab-content>.tab-pane{
   display:none
@@ -528,18 +524,18 @@ hr{
 
 .card_int{
   position: relative;
-  width: calc(50% - 20px);
-  min-height: 300px;
-  background: #fff;
-  margin: 10px;
+  width: calc(100% - 0em);
+  min-height: 230px;
+  background: var(--wh-);
+  margin: 2em 0;
   box-sizing: border-box;
   box-shadow: var(--shadow1-);
-  border-radius: 0.5em;
+  border-radius: 2px;
 }
 
 .card_int .imgBx{
   position: absolute;
-  width: 50%;
+  width: 30%;
   height: 100%;
 }
 
@@ -550,19 +546,20 @@ hr{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-top-left-radius: 0.5em;
-  border-bottom-left-radius: 0.5em;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
 
 .card_int .details{
   position: absolute;
   right: 0;
-  width: 50%;
-  height: 100%;
+  width: 70%;
+  height: auto;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .card_int .details .content{
@@ -574,14 +571,23 @@ hr{
   margin: 0;
   padding: 0;
   font-size: 2em;
-  color: var(--gr-);
+  color: var(--dc-);
   line-height: 0.85em;
-  font-weight: 600;
+  font-weight: 300;
+  text-transform: capitalize;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 
-.card_int .details .content h2 span{
+.card_int .details .content span{
   font-size: 1rem;
-  color: var(--gr2-);
+  color: var(--lg-);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card_int .details .content ul{
@@ -592,36 +598,32 @@ hr{
 
 .card_int .details .content ul li{
   list-style: none;
-  margin-left: 2px;
 }
 
-.card_int .details .content ul li a{
-  color: var(--dc-);
-  border: none;
-  border-radius: 0.1em;
-  border: 1px solid var(--dc-);
+.card_int .details .content ul li p{
+  color: var(--gr2-);
+  margin-top: 0.5em;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .card_int .details .content a{
   display: inline-block;
   text-decoration: none;
   padding: 5px 10px;
-  margin-top: 10px;
+  margin: 0;
   border: 1px solid var(--dc-);
   color: var(--dc-);
   font-weight: 300;
-  border-radius: 0.2em;
+  margin-top: 2em;
 }
 
 .card_int .details .content a:hover{
   background: var(--dc-);
-  color: #fff;
-}
-
-@media (max-width: 1200px) {
-  .container{
-    width: 100%;
-  }
+  color: var(--wh-);
 }
 
 @media (max-width: 991px) {
@@ -641,16 +643,13 @@ hr{
     width: 100%;
     height: 200px;
   }
-  .card_int .imgBx img{
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
   .card_int .details{
     position: relative;
     width: 100%;
     height: 200px;
+  }
+  .card_int .details .content a{
+    margin-top: 0;
   }
 }
 
