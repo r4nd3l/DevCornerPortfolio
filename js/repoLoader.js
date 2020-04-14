@@ -314,4 +314,40 @@ function mouseOut() {
   grid_items.style.animation = "none";
 }
 
-// INTERESTS section - Wordpress content API
+// INTERESTS section - Wordpress content API - IntershipBlog
+let wp_content = function () {
+  fetch('https://public-api.wordpress.com/wp/v2/sites/internshipmatemolnarblog.wordpress.com/posts?_embed')
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+
+      var id = data[0].date;
+      console.log(id);
+
+      document.querySelector('.wp_feed').innerHTML = `
+        <h1>${id}</h1>
+      `
+    })
+    .catch(err => console.log(err))
+}
+wp_content();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// END
