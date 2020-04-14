@@ -570,12 +570,10 @@ hr{
 .card_int .details .content h2{
   margin: 0;
   padding: 0;
-  font-size: 2em;
+  font-size: 1.5em;
   color: var(--dc-);
-  line-height: 0.85em;
   font-weight: 300;
   text-transform: capitalize;
-
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
@@ -585,9 +583,13 @@ hr{
 .card_int .details .content span{
   font-size: 1rem;
   color: var(--lg-);
-  white-space: nowrap;
+
+  /* Limit characters displayed in span */
+  display: block;
+  width: 80px;
   overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 5px;
 }
 
 .card_int .details .content ul{
@@ -618,7 +620,7 @@ hr{
   border: 1px solid var(--dc-);
   color: var(--dc-);
   font-weight: 300;
-  margin-top: 2em;
+  margin-top: 1.5em;
 }
 
 .card_int .details .content a:hover{

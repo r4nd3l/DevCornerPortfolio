@@ -315,8 +315,8 @@ function mouseOut() {
   grid_items.style.animation = "none";
 }
 
-// INTERESTS section - Wordpress content API - IntershipBlog
-let wp_content = function () {
+// INTERESTS section - Wordpress content API - Internship Blog
+let wp_InternBlog = function () {
   fetch('https://public-api.wordpress.com/wp/v2/sites/internshipmatemolnarblog.wordpress.com/posts?_embed')
     .then(res => res.json())
     .then(data => {
@@ -330,7 +330,7 @@ let wp_content = function () {
       var wp_link = data[0].link;
       // console.log(wp_title);
 
-      document.querySelector('.wp_feed').innerHTML = `
+      document.querySelector('.wp_InternBlog').innerHTML = `
         <div class="card_int">
           <div class="imgBx">
             <img src="${wp_img}" alt="${wp_img_alt}">
@@ -349,7 +349,44 @@ let wp_content = function () {
       `
     }).catch(err => console.log(err))
 }
-wp_content();
+wp_InternBlog();
+
+// INTERESTS section - Wordpress content API - MatesNotes Blog
+let wp_MatesBlog = function () {
+  fetch('https://public-api.wordpress.com/wp/v2/sites/matesnotes.wordpress.com/posts?_embed')
+    .then(res => res.json())
+    .then(data => {
+      // console.log(data);
+
+      var wp_title = data[0].title.rendered;
+      var wp_date = data[0].date;
+      var wp_text = data[0].excerpt.rendered;
+      var jetpack_related_posts = 'jetpack\u{002D}related\u{002D}posts'+'[2]'+'.img'+'.src';
+      var wp_img = data[0].jetpack_related_posts;
+      var wp_img_alt = data[0].slug;
+      var wp_link = data[0].link;
+      // console.log(wp_title);
+
+      document.querySelector('.wp_MatesBlog').innerHTML = `
+        <div class="card_int">
+          <div class="imgBx">
+            <img src="${wp_img}" alt="${wp_img_alt}">
+          </div>
+          <div class="details">
+            <div class="content">
+              <h2>${wp_title}<br></h2>
+              <span>${wp_date}</span>
+              <ul>
+                <li>${wp_text}</li>
+              </ul>
+              <a href="${wp_link}" target="_blank">Visit blog</a>
+            </div>
+          </div>
+        </div>
+      `
+    }).catch(err => console.log(err))
+}
+wp_MatesBlog();
 
 
 
