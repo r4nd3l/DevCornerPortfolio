@@ -87,14 +87,16 @@
       "yt":
       [
         {
-          "url": "url_1",
-          "title": "title_2",
-          "desc": "de_3s"
+          "url": "https://www.youtube.com/embed/IddBR9ryRl4",
+          "title": "Zibat Blockchain Demo Teaser 2016",
+          "desc": "The Zibat blockchain was the first experiment with this particular technology",
+          "link": "https://www.youtube.com/watch?v=IddBR9ryRl4"
         },
         {
-          "url": "url_4",
-          "title": "title_5",
-          "desc": "de_6s"
+          "url": "https://www.youtube.com/embed/E6PPBnPrrng",
+          "title": "Hachathon style One-Pager website creation",
+          "desc": "Creating a One-Pager website from scratch, with new logo and buttons and images and videos as well.",
+          "link": "https://www.youtube.com/watch?v=E6PPBnPrrng"
         }
       ]
     },

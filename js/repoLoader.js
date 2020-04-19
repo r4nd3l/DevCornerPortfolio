@@ -156,17 +156,28 @@ function personalContent() {
     </ul>
   `
 
-  // function interests(){
-  //   proSet.ints.forEach((item) => {
-  //     document.querySelector('.js-ints').innerHTML += `
-  //       <div class="mb-3">${item.paragraph}</div>
-  //     `;
-  //   });
-  // }
-  // interests();
-
-  // called from resume.js - tooltip func
-  // tooltip();
+  function intYt(){
+    proSet.ints.yt.forEach((item) => {
+      document.querySelector('.js-yt').innerHTML += `
+        <div class="card_int">
+          <div class="imgBx">
+            <iframe width="560" height="315" src="${item.url}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="details">
+            <div class="content">
+              <h2>${item.title}<br></h2>
+              <span>No date</span>
+              <ul>
+                <li>${item.desc}</li>
+              </ul>
+              <a href="${item.url}" target="_blank">Visit channel</a>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+  }
+  intYt();
 
   document.querySelector('.js-cert').innerHTML = `
     <h2 class="mb-5">Certifications <a

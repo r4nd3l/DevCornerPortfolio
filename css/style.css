@@ -539,6 +539,7 @@ hr{
   height: 100%;
 }
 
+.card_int .imgBx iframe,
 .card_int .imgBx img{
   position: absolute;
   top: 0;
