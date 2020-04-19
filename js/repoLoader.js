@@ -170,7 +170,7 @@ function personalContent() {
               <ul>
                 <li>${item.desc}</li>
               </ul>
-              <a href="${item.url}" target="_blank">Visit channel</a>
+              <a href="${item.link}" target="_blank">Visit channel</a>
             </div>
           </div>
         </div>
