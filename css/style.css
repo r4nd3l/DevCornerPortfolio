@@ -566,6 +566,7 @@ hr{
 .card_int .details .content{
   padding: 20px;
   box-sizing: border-box;
+  float: left;
 }
 
 .card_int .details .content h2{

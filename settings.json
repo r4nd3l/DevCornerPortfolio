@@ -89,14 +89,74 @@
         {
           "url": "https://www.youtube.com/embed/IddBR9ryRl4",
           "title": "Zibat Blockchain Demo Teaser 2016",
-          "desc": "The Zibat blockchain was the first experiment with this particular technology",
+          "desc": "The Zibat blockchain was the first experiment with this particular technology. Blockchain.com is a Bitcoin block explorer service, as well as a cryptocurrency wallet supporting Bitcoin, Bitcoin Cash, and Ethereum. They also provide Bitcoin data charts, stats, and market information.",
           "link": "https://www.youtube.com/watch?v=IddBR9ryRl4"
         },
         {
           "url": "https://www.youtube.com/embed/E6PPBnPrrng",
           "title": "Hachathon style One-Pager website creation",
-          "desc": "Creating a One-Pager website from scratch, with new logo and buttons and images and videos as well.",
+          "desc": "Creating a One-Pager website from scratch, with new logo and buttons and images and videos as well. The program I worked with, it's called the Mobirise a freeware web design application, developed by Mobirise, that allows users to create and publish bootstrap websites, without coding. Mobirise is essentially a drag and drop website builder, featuring various website themes. The software's features can be extended by purchasing extensions.",
           "link": "https://www.youtube.com/watch?v=E6PPBnPrrng"
+        },
+        {
+          "url": "https://www.youtube.com/embed/hQ_vQRxx0FU",
+          "title": "3D - Mobile version Prototype",
+          "desc": "3D printing experiment. Work in progress video about to create a mobile version of a hologram. A hologram is a physical recording of an interference pattern which uses diffraction to reproduce a three-dimensional light field, resulting in an image which retains the depth, parallax, and other properties of the original scene. Holography is the science and practice of making holograms.",
+          "link": "https://www.youtube.com/watch?v=hQ_vQRxx0FU"
+        },
+        {
+          "url": "https://www.youtube.com/embed/VzZqB4TCqt0",
+          "title": "3d print and prototype",
+          "desc": "Another work in process about to create a 3D printed mobile version of a hologram experiment. A hologram is a physical recording of an interference pattern which uses diffraction to reproduce a three-dimensional light field, resulting in an image which retains the depth, parallax, and other properties of the original scene. Holography is the science and practice of making holograms.",
+          "link": "https://www.youtube.com/watch?v=VzZqB4TCqt0"
+        },
+        {
+          "url": "https://www.youtube.com/embed/SrlquZBzppc",
+          "title": "Bigger version prototype",
+          "desc": "PreProcess of a LEGO made prototype of a 3D hologram with tablet. A hologram is a physical recording of an interference pattern which uses diffraction to reproduce a three-dimensional light field, resulting in an image which retains the depth, parallax, and other properties of the original scene. Holography is the science and practice of making holograms.",
+          "link": "https://www.youtube.com/watch?v=SrlquZBzppc"
+        },
+        {
+          "url": "https://www.youtube.com/embed/jJ3Pzg54FYc",
+          "title": "Final mobile version",
+          "desc": "The final version of the plexi based mobile version of hologram. A hologram is a physical recording of an interference pattern which uses diffraction to reproduce a three-dimensional light field, resulting in an image which retains the depth, parallax, and other properties of the original scene. Holography is the science and practice of making holograms.",
+          "link": "https://www.youtube.com/watch?v=jJ3Pzg54FYc"
+        },
+        {
+          "url": "https://www.youtube.com/embed/9IcfexQPCmU",
+          "title": "tablet",
+          "desc": "The Google Sketchup based visual design of the tablet version of the hologram 'holder'. A hologram is a physical recording of an interference pattern which uses diffraction to reproduce a three-dimensional light field, resulting in an image which retains the depth, parallax, and other properties of the original scene. Holography is the science and practice of making holograms.",
+          "link": "https://www.youtube.com/watch?v=9IcfexQPCmU"
+        },
+        {
+          "url": "https://www.youtube.com/embed/0mjLRLoj_5U",
+          "title": "in work",
+          "desc": "The long version of the work in process of the hologram experiment. Trying out new ways and materials. A hologram is a physical recording of an interference pattern which uses diffraction to reproduce a three-dimensional light field, resulting in an image which retains the depth, parallax, and other properties of the original scene. Holography is the science and practice of making holograms.",
+          "link": "https://www.youtube.com/watch?v=0mjLRLoj_5U"
+        },
+        {
+          "url": "https://www.youtube.com/embed/ofNakTWmZNI",
+          "title": "ReDesign",
+          "desc": "Work in progress repairing of the first 3D tablet version design of the hologram holder. A hologram is a physical recording of an interference pattern which uses diffraction to reproduce a three-dimensional light field, resulting in an image which retains the depth, parallax, and other properties of the original scene. Holography is the science and practice of making holograms.",
+          "link": "https://www.youtube.com/watch?v=ofNakTWmZNI"
+        },
+        {
+          "url": "https://www.youtube.com/embed/MPgwCvJ1hvU",
+          "title": "Hologram",
+          "desc": "The ready version of the 3D hologram holder. Made with Google Sketchup and printed with the MakerBot 3D printer. A hologram is a physical recording of an interference pattern which uses diffraction to reproduce a three-dimensional light field, resulting in an image which retains the depth, parallax, and other properties of the original scene. Holography is the science and practice of making holograms.",
+          "link": "https://www.youtube.com/watch?v=MPgwCvJ1hvU"
+        },
+        {
+          "url": "https://www.youtube.com/embed/vGrFnbTemtA",
+          "title": "test print",
+          "desc": "The test print of a key ring. MakerBot experiment. MakerBot Industries, LLC is an American desktop 3D printer manufacturer company headquartered in New York City. It was founded in January 2009 by Bre Pettis, Adam Mayer, and Zach Hoeken Smith to build on the early progress of the RepRap Project.",
+          "link": "https://www.youtube.com/watch?v=vGrFnbTemtA"
+        },
+        {
+          "url": "https://www.youtube.com/embed/nhtCt0fLVnQ",
+          "title": "mobile version prototype",
+          "desc": "3D printing with the MakerBot. Mobile version work in progress. MakerBot Industries, LLC is an American desktop 3D printer manufacturer company headquartered in New York City. It was founded in January 2009 by Bre Pettis, Adam Mayer, and Zach Hoeken Smith to build on the early progress of the RepRap Project.",
+          "link": "https://www.youtube.com/watch?v=nhtCt0fLVnQ"
         }
       ]
     },

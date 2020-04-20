@@ -166,7 +166,7 @@ function personalContent() {
           <div class="details">
             <div class="content">
               <h2>${item.title}<br></h2>
-              <span>No date</span>
+              <span>Description:</span>
               <ul>
                 <li>${item.desc}</li>
               </ul>
