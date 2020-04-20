@@ -166,9 +166,9 @@ function personalContent() {
           <div class="details">
             <div class="content">
               <h2>${item.title}<br></h2>
-              <span>Description:</span>
+              <span>Briefly ↴</span>
               <ul>
-                <li>${item.desc}</li>
+                <li><p>${item.desc}</p></li>
               </ul>
               <a href="${item.link}" target="_blank">Visit channel</a>
             </div>
