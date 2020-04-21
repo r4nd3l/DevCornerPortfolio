@@ -523,7 +523,7 @@ hr{
 
 
 .tab-content>.tab-pane{
-  display:none
+  display:none;
 }
 .tab-content>.active{
   display:block
@@ -532,10 +532,10 @@ hr{
 
 .card_int{
   position: relative;
-  width: calc(99% - 0em);
+  width: 98%;
   min-height: 230px;
   background: var(--wh-);
-  margin: 2em 0;
+  margin: 2em 0.5em;
   box-sizing: border-box;
   box-shadow: var(--shadow1-);
   border-radius: 2px;
