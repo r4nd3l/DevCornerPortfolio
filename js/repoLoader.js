@@ -179,6 +179,29 @@ function personalContent() {
   }
   intYt();
 
+  function intSkp(){
+    proSet.ints.yt.forEach((item) => {
+      document.querySelector('.js-skp').innerHTML += `
+        <div class="card_int">
+          <div class="imgBx">
+            <iframe src="${item.url}" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe>
+          </div>
+          <div class="details">
+            <div class="content">
+              <h2>${item.title}<br></h2>
+              <span>Briefly ↴</span>
+              <ul>
+                <li><p>${item.desc}</p></li>
+              </ul>
+              <a href="${item.link}" target="_blank">Visit channel</a>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+  }
+  intSkp();
+
   document.querySelector('.js-cert').innerHTML = `
     <h2 class="mb-5">Certifications <a
         href="https://www.dropbox.com/sh/wcp304fo3bo5rwi/AAA9p13kFUKjNZfs229akMuOa?dl=0" target="_blank"
