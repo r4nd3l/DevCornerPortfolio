@@ -188,8 +188,50 @@
         {
           "url": "https://3dwarehouse.sketchup.com/embed/8f379e27-6039-4748-b1df-b8c0a1d43d44",
           "title": "A desktop table",
-          "desc": "Playing around with inventory to create view",
+          "desc": "Playing around with inventory to create view and add new elements and materials as well. Also testing the filters to generate shadows and smooth shades around the sharp edges.",
           "link": "https://3dwarehouse.sketchup.com/model/8f379e27-6039-4748-b1df-b8c0a1d43d44/A-desktop-table"
+        },
+        {
+          "url": "https://3dwarehouse.sketchup.com/embed/dd1a16b4-e4ed-4c64-903a-9c578e660566",
+          "title": "Home model visual",
+          "desc": "A modern home layout of iconic houses. Inspired by a book written by Dominic Bradbury - Mediterranean Modern. Innovative architecture and contemporary lifestyles: architect-designed houses and interiors capture the new design aesthetic of one of the world's most seductive regions.",
+          "link": "https://3dwarehouse.sketchup.com/model/dd1a16b4-e4ed-4c64-903a-9c578e660566/Home-model-visual"
+        },
+        {
+          "url": "https://3dwarehouse.sketchup.com/embed/02cd5a42-df1a-49cf-b7f6-ec0f9329b2d4",
+          "title": "The dagger from Prince of Persia",
+          "desc": "Prince of Persia - Sands of Time dagger. The Dagger of Time enables the wielder to reverse, stop, slow, and use various other time-related powers. The mechanism used to activate the Dagger is a blue and gold accented button located in the center of the Dagger's hilt. It, like the Medallion and Staff of Time, protects its wielder from the effects of the Sands of Time. Doubling as a weapon, the Dagger of Time is the only weapon that can harm and recapture Sand Creatures.",
+          "link": "https://3dwarehouse.sketchup.com/model/02cd5a42-df1a-49cf-b7f6-ec0f9329b2d4/The-dagger-from-Prince-of-Persia"
+        },
+        {
+          "url": "https://3dwarehouse.sketchup.com/embed/3c8e9426-3d95-43eb-9bd9-4897b21b0242",
+          "title": "A CD case model",
+          "desc": "A blank CD case, an empty case. Optical disc packaging is the packaging that accompanies CDs, DVDs, and other formats of optical discs. Most packaging is rigid or semi-rigid and designed to protect the media from scratches and other types of exposure damage.",
+          "link": "https://3dwarehouse.sketchup.com/model/3c8e9426-3d95-43eb-9bd9-4897b21b0242/A-CD-case-model"
+        },
+        {
+          "url": "https://3dwarehouse.sketchup.com/embed/7780d17f-aa95-460e-9ab2-66a41cf21e43",
+          "title": "The Casa Model",
+          "desc": "A new advantage of the Case model which is the original layout map of the house of Diana Burnwood from Hitman Absolution. it is a stealth video game developed by IO Interactive and published by Square Enix. It is the fifth installment in the Hitman series.",
+          "link": "https://3dwarehouse.sketchup.com/model/7780d17f-aa95-460e-9ab2-66a41cf21e43/The-Casa-Model"
+        },
+        {
+          "url": "https://3dwarehouse.sketchup.com/embed/7f6dad61-7e5d-4ce3-8466-0a7fdd05e7ac",
+          "title": "AquaPonUpdatedModel",
+          "desc": "An updated version of the AquaPon Experiment. AQUAPONICS is the combination of aquaculture (raising fish) and hydroponics (the soil-less growing of plants) that grows fish and plants together in one integrated system. HYDROPONICS is a method of growing plants without using soil (i.e., soil-less).",
+          "link": "https://3dwarehouse.sketchup.com/model/7f6dad61-7e5d-4ce3-8466-0a7fdd05e7ac/AquaPonUpdatedModel"
+        },
+        {
+          "url": "https://3dwarehouse.sketchup.com/embed/3cb3d148-9425-4f7a-83f9-6943286502d5",
+          "title": "AquaPonModel",
+          "desc": "Experiment of the aquaPon technology with the fish tank, is the place where your fish resides. In an aquaponic system, fish wastes in a fish tank together with water will be pumped to plants beds, providing them with enough moisture and nutrients for their growth. Plants then absorb the nitrogen in the water and return with purified water to the reservoir. And this cycle goes on.",
+          "link": "https://3dwarehouse.sketchup.com/model/3cb3d148-9425-4f7a-83f9-6943286502d5/AquaPonModel"
+        },
+        {
+          "url": "https://3dwarehouse.sketchup.com/embed/415e5c43b0f049ba5458c6866b1d46e9",
+          "title": "ipod Shuffle",
+          "desc": "The 2nd generation of the iPod Shuffle. It was my original one and I liked it so much that inspired me to recreate it in Google Sketchup. The iPod Shuffle (stylized and marketed as iPod shuffle) is a digital audio player designed and formerly marketed by Apple Inc. It was the smallest model in Apple's iPod family, and was the first iPod to use flash memory.",
+          "link": "https://3dwarehouse.sketchup.com/model/415e5c43b0f049ba5458c6866b1d46e9/ipod-Shuffle"
         }
       ]
     },

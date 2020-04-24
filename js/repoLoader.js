@@ -180,7 +180,7 @@ function personalContent() {
   intYt();
 
   function intSkp(){
-    proSet.ints.yt.forEach((item) => {
+    proSet.ints.skp.forEach((item) => {
       document.querySelector('.js-skp').innerHTML += `
         <div class="card_int">
           <div class="imgBx">
@@ -193,7 +193,7 @@ function personalContent() {
               <ul>
                 <li><p>${item.desc}</p></li>
               </ul>
-              <a href="${item.link}" target="_blank">Visit channel</a>
+              <a href="${item.link}" target="_blank">Visit warehouse</a>
             </div>
           </div>
         </div>
