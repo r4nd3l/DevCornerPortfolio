@@ -508,7 +508,7 @@ hr{
 .nav-tabs .nav-item.show .nav-link,.nav-tabs .nav-link.active:nth-child(1),.nav-tabs .nav-link:hover:nth-child(1) i{color: #21749a;} /* Worpress */
 .nav-tabs .nav-item.show .nav-link,.nav-tabs .nav-link.active:nth-child(2),.nav-tabs .nav-link:hover:nth-child(2) i{color: #fe431c;} /* YouTube */
 .nav-tabs .nav-item.show .nav-link,.nav-tabs .nav-link.active:nth-child(3),.nav-tabs .nav-link:hover:nth-child(3) i{color: #2173fc;} /* Behance */
-.nav-tabs .nav-item.show .nav-link,.nav-tabs .nav-link.active:nth-child(4),.nav-tabs .nav-link:hover:nth-child(4) i{color: #b82f22;} /* Dribble */
+/* .nav-tabs .nav-item.show .nav-link,.nav-tabs .nav-link.active:nth-child(4),.nav-tabs .nav-link:hover:nth-child(4) i{color: red;} */
 
 .tab-content{
   border: none;
@@ -696,6 +696,23 @@ hr{
   background: linear-gradient(125deg,var(--dc-), var(--rgba-dc-));
   border-radius: 3px;
 }
+
+/* Custom font-awesome */
+.fa-skp {
+  /* content: ""; */
+  display: inline-block;
+  color: red;
+  height:16px;
+  width:16px;
+  background-size: 16px 16px;
+  background-image: url(../img/skp.svg);
+  background-repeat: no-repeat;
+}
+.fa-skp:hover{
+  color: red;
+  fill: red;
+}
+
 
 /* custom scrollbar - END */
 
