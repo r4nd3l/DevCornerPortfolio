@@ -44,6 +44,7 @@ $(document).ready(function(){
   });
 });
 
+// tooltip preview at portfolio section
 function tooltip(){
   var spanText = document.querySelectorAll('#tooltip');
   window.onmousemove = function(e){

@@ -156,6 +156,7 @@ function personalContent() {
     </ul>
   `
 
+  // YouTube Sources
   function intYt(){
     proSet.ints.yt.forEach((item) => {
       document.querySelector('.js-yt').innerHTML += `
@@ -179,6 +180,7 @@ function personalContent() {
   }
   intYt();
 
+  // Sketcup Sources
   function intSkp(){
     proSet.ints.skp.forEach((item) => {
       document.querySelector('.js-skp').innerHTML += `
@@ -201,6 +203,30 @@ function personalContent() {
     });
   }
   intSkp();
+
+  // YouTube Sources
+  function intBhc(){
+    proSet.ints.skp.forEach((item) => {
+      document.querySelector('.js-bhc').innerHTML += `
+        <div class="card_int">
+          <div class="imgBx">
+            <img src="${wpitem.img}" alt="${item.title}">
+          </div>
+          <div class="details">
+            <div class="content">
+              <h2>${item.title}<br></h2>
+              <span>Briefly ↴</span>
+              <ul>
+                <li>${item.desc}</li>
+              </ul>
+              <a href="${item.link}" target="_blank">Visit work</a>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+  }
+  intBhc();
 
   document.querySelector('.js-cert').innerHTML = `
     <h2 class="mb-5">Certifications <a
