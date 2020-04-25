@@ -206,7 +206,7 @@ function personalContent() {
 
   // YouTube Sources
   function intBhc(){
-    proSet.ints.skp.forEach((item) => {
+    proSet.ints.bhc.forEach((item) => {
       document.querySelector('.js-bhc').innerHTML += `
         <div class="card_int">
           <div class="imgBx">
@@ -217,7 +217,7 @@ function personalContent() {
               <h2>${item.title}<br></h2>
               <span>Briefly ↴</span>
               <ul>
-                <li>${item.desc}</li>
+                <li><p>${item.desc}</p></li>
               </ul>
               <a href="${item.link}" target="_blank">Visit work</a>
             </div>
