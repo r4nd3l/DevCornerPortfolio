@@ -210,7 +210,7 @@ function personalContent() {
       document.querySelector('.js-bhc').innerHTML += `
         <div class="card_int">
           <div class="imgBx">
-            <img src="${wpitem.img}" alt="${item.title}">
+            <img src="${item.img}" alt="${item.title}">
           </div>
           <div class="details">
             <div class="content">
